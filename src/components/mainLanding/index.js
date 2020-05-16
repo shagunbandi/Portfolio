@@ -145,21 +145,15 @@ export class MainLayout extends Component {
           {/* <!-- Sub Nav --> */}
           <div class="UnderlineNav width-full user-profile-nav js-sticky top-0">
             <nav class="UnderlineNav-body" data-pjax aria-label="User profile">
-              <a aria-current="page" class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 selected "
-                data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:16754547,&quot;target&quot;:&quot;TAB_OVERVIEW&quot;,&quot;user_id&quot;:18301341,&quot;originating_url&quot;:&quot;https://github.com/DefCon-007&quot;}}"
-                data-hydro-click-hmac="b182df3e7e1db92857e27d88f425c6b1385a619e1b7ca07e0cadcc2b2b4f5be1"
-                href="/DefCon-007">
+              <button class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 selected ">
                 Overview
-              </a>
-              <a class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 "
-                data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:16754547,&quot;target&quot;:&quot;TAB_REPOSITORIES&quot;,&quot;user_id&quot;:18301341,&quot;originating_url&quot;:&quot;https://github.com/DefCon-007&quot;}}"
-                data-hydro-click-hmac="559f6c3a7a3d59d27da8e8a0860877cc07c68b4ab398e7edea1639f0092c6b9f"
-                href="/DefCon-007?tab=repositories">
+              </button>
+              <button class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 ">
                 Repositories
                 <span class="Counter hide-lg hide-md hide-sm">
                   97
                 </span>
-              </a>
+              </button>
             </nav>
           </div>
 
