@@ -5,7 +5,7 @@ import { Category } from './Category';
 
 var skills = require('../../../assets/database/skills.json')
 
-export class Pinned extends Component {
+export class Skills extends Component {
 
   render() {
     var SkillCategory = []
@@ -26,4 +26,4 @@ export class Pinned extends Component {
     );
   }
 }
-export default connect()(Pinned);
+export default connect()(Skills);
