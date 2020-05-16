@@ -9,15 +9,28 @@ export class MonthContent extends Component {
     render() {
 
         const { achievement } = this.props;
-        const { title, link, main_date, subtitles, links } = achievement;
+        const { title, link, main_date, subtitles } = achievement;
+        var { links, technologies } = achievement;
 
         var Content = []
         if (subtitles) {
+            if (!links) {
+                links = []
+                for (var i = 0; i < subtitles.length; i++) {
+                    links.push("#");
+                }
+            }
+            if (!technologies) {
+                technologies = []
+                for (var i = 0; i < subtitles.length; i++) {
+                    technologies.push(null);
+                }
+            }
             subtitles.forEach((element, index) => {
                 Content.push(
-                    <ContentDetail title={element} link={links[index]}/>
+                    <ContentDetail title={element} link={links[index]} technologies={technologies[index]} />
                 )
-            });   
+            });
         }
         else {
             Content = null;
@@ -34,15 +47,13 @@ export class MonthContent extends Component {
                     </svg>
                 </span>
 
-                <button type="button"
-                    className="btn-link f4 muted-link no-underline lh-condensed width-full js-details-target "
-                    aria-expanded="false">
-                    <span className="float-left ws-normal text-left">{title}</span>
-                </button>
-                <ul className="profile-rollup-content mt-1" data-repository-hovercards-enabled>
+                <a href={link} target="_blank" className="muted-link btn-link f4 width-full " >
+                    <span className="float-left ws-bold text-bold text-left">{title}</span>
+                </a>
+                {/* <time className="float-right f6 text-gray-light">{main_date}</time> */}
+                <ul className="profile-rollup-content mt-1">
                     {Content}
                 </ul>
-                <time className="float-right f6 text-gray-light pt-1">{main_date}</time>
 
             </div>
         );

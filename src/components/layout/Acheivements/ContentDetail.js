@@ -8,23 +8,23 @@ export class ContentDetail extends Component {
 
     render() {
 
-        const { title, date, link, techs } = this.props;
+        const { title, date, link, technologies } = this.props;
 
-        // var techs = [];
-        // if (subtitles) {
-        //     techs = subtitles.map((value, index) => {
-        //         const ind = index % color.length;
-        //         return (
-        //             <span className="ml-0">
-        //                 <span className="repo-language-color" style={{ backgroundColor: color[ind] }}></span>
-        //                 <span itemProp="programmingLanguage">{value}</span>
-        //             </span>
-        //         )
-        //     });
-        // }
-        // else {
-        //     techs = null;
-        // }
+        var techs = [];
+        if (technologies) {
+            technologies.forEach((tech, index) => {
+                const ind = index % color.length;
+                techs.push(
+                    <span className="ml-0">
+                        <span className="repo-language-color" style={{ backgroundColor: color[ind], marginRight: "4px", marginLeft: "4px"}}></span>
+                        <span itemProp="programmingLanguage">{tech}</span>
+                    </span>
+                )
+            });
+        }
+        else {
+            techs = null;
+        }
 
         return (
             <li className="d-block mt-1 py-1">
@@ -33,7 +33,7 @@ export class ContentDetail extends Component {
                 </span>
 
                 <span className="f6 text-gray d-block mt-1 d-lg-inline mt-lg-0">
-                    {/* {techs} */}
+                    {techs}
                 </span>
                 <time className="float-right f6 text-gray-light pt-1">{date}</time>
             </li>

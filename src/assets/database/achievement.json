@@ -1,5 +1,5 @@
 {
-    "Jan 2018": [
+    "January 2018": [
         {
             "title": "Certification - Object Oriented Programming in Java (UC San Diego)",
             "main_date": "15 Jan",
@@ -9,30 +9,14 @@
                 "Arrays, List and Structured Data",
                 "Object Oriented Programming in Java",
                 "Data Structure and Programming"
-            ],
-            "links": [
-                "",
-                "",
-                "",
-                ""
             ]
-        },
+        }
+    ],
+    "May 2017": [
         {
-            "title": "One More Achie",
-            "main_date": "15 Jan",
-            "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/58W95TV7YC6M",
-            "subtitles": [
-                "Solving Problem With Software",
-                "Arrays, List and Structured Data",
-                "Object Oriented Programming in Java",
-                "Data Structure and Programming"
-            ],
-            "links": [
-                "",
-                "",
-                "",
-                ""
-            ]
+            "title": "SBI National Hackathon-Code for Bank",
+            "main_date": "5 Jun",
+            "link": "https://www.hackerearth.com/challenges/hackathon/sbi-code-for-bank-2017/"
         }
     ],
     "May 2020": [
@@ -41,14 +25,20 @@
             "main_date": "10 May",
             "link": "#",
             "subtitles": [
-                "Dog Vision",
-                "Heart Disease"
-            ],
-            "links": [
-                "",
-                "",
-                "",
-                ""
+                "Heart Disease Prediction",
+                "Bulldozer Price Prediction",
+                "Dog Breed Identification"
+            ]
+        }
+    ],
+    "September 2019": [
+        {
+            "title": "Sapient Awards",
+            "main_date": "15 Sep",
+            "link": "#",
+            "subtitles": [
+                "Sapient - Rookie of the Batch",
+                "Rewards and Recognitions - Engaging with Openness"
             ]
         }
     ]

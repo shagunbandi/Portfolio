@@ -31,9 +31,9 @@ export class Timeline extends Component {
                         {Months}
                     </div>
 
-                    <div className="ajax-pagination-form js-ajax-pagination js-show-more-timeline-form col-lg-10 col-12">
+                    <div className="">
                         <button name="button" type="submit"
-                            className="ajax-pagination-btn btn btn-outline border-gray-dark width-full f6 mt-0 py-2 contribution-activity-show-more">I was just born before this</button>
+                            className="btn btn-outline border-gray-dark width-full f6 mt-0 py-2">Yupp That's it</button>
                     </div>
                 </div>
             </div>
