@@ -1,0 +1,49 @@
+{
+	"Programming Languages": [
+		"Java",
+		"Python",
+		"JavaScript",
+		"C",
+		"C++",
+		"Swift"
+	],
+	"Tools and Framework": [
+		"SpringBoot",
+		"ReactJS",
+		"NodeJS",
+		"Django",
+		"Firebase",
+		"Fabric",
+		"Auth0",
+		"Cucumber"
+	],
+	"Data Analysis": [
+		"Pandas",
+		"Numpy",
+		"Keras",
+		"PyTorch",
+		"Scikit Learn",
+		"TensorFlow"
+	],
+	"DevOps": [
+		"Docker",
+		"Kubernetes",
+		"Jenkins",
+		"Istio",
+		"GCP",
+		"Azure",
+		"Azure DevOps",
+		"API Management"
+	],
+	"Web Designing": [
+		"HTML",
+		"CSS",
+		"Bootstrap",
+		"Material",
+		"Gatsby"
+	],
+	"Datbase": [
+		"MySQl",
+		"MongoDB"
+	]
+}

@@ -18,8 +18,7 @@ export class ContentDetail extends Component {
                         </svg>
                     </span>
 
-                    <a className="mr-2 ">1 Project Completed</a>
-
+                    <span className="mr-2 ">1 Project Completed</span>
                 </span>
 
                 <span className="f6 text-gray d-block mt-1 d-lg-inline mt-lg-0">Text and<span className="ml-0">

@@ -9,7 +9,7 @@ export class Profile extends Component {
     render() {
         return (
             <div className="clearfix">
-                <div className="float-left col-3 col-md-12 pr-3 pr-md-0">
+                <div className="float-left col-3 col-md-12 pr-3 pr-md-0" style={{ padding: "0" }}>
                     <a itemProp="image" className="u-photo d-block position-relative" aria-hidden="true"
                         href={profileImage}>
                         <img alt="" width="260" height="260"
@@ -18,7 +18,7 @@ export class Profile extends Component {
                     </a>
                 </div>
 
-                <div className="float-md-left col-12">
+                <div className="float-md-left col-12" style={{padding:"0"}}>
                     <div className="user-status-container border position-relative hide-sm hide-md ">
                         <div className="d-flex">
                             <div className="d-flex p-2 width-full " data-team-hovercards-enabled>
@@ -31,7 +31,8 @@ export class Profile extends Component {
                 </div>
 
                 <div
-                    className="vcard-names-container float-left col-9 col-md-12 pt-1 pt-md-3 pb-1 pb-md-3 js-sticky js-user-profile-sticky-fields">
+                    className="vcard-names-container float-left col-9 col-md-12 pt-1 pt-md-3 pb-1 pb-md-3 js-sticky js-user-profile-sticky-fields"
+                    style={{ padding: "0" }}>
                     <h1 className="vcard-names pl-2 pl-md-0">
                         <span className="p-name vcard-fullname d-block overflow-hidden" itemProp="name">Shagun Bandi</span>
                         <span className="p-nickname vcard-username d-block" itemProp="additionalName">shagunbandi</span>
