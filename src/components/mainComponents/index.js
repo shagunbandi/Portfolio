@@ -16,10 +16,10 @@ export class MainLayout extends Component {
 
     render() {
         return (
-          <div class="application-main " data-commit-hovercards-enabled>
+          <div className="application-main " data-commit-hovercards-enabled>
             <main id="js-pjax-container" data-pjax-container>
-              <div class="container-xl clearfix px-3 mt-4">
-                <div class="h-card col-lg-3 col-md-4 col-12 float-md-left pr-md-3 pr-xl-6" data-acv-badge-hovercards-enabled itemscope itemtype="http://schema.org/Person">
+              <div className="container-xl clearfix px-3 mt-4">
+                <div className="h-card col-lg-3 col-md-4 col-12 float-md-left pr-md-3 pr-xl-6" data-acv-badge-hovercards-enabled itemScope itemType="http://schema.org/Person">
                   <Profile />
                   <DownloadResume />
                   <Description />
@@ -27,10 +27,10 @@ export class MainLayout extends Component {
                   <Organisations />
                 </div>
                 <LocationEmailMobile />
-                <div class="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
+                <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
                   <SubNavBar />
 
-                  <div class="position-relative">
+                  <div className="position-relative">
                     <Pinned />
                     <Timeline />
 

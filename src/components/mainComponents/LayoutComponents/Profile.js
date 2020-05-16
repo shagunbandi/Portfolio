@@ -10,7 +10,7 @@ export class Profile extends Component {
         return (
             <div className="clearfix">
                 <div className="float-left col-3 col-md-12 pr-3 pr-md-0">
-                    <a itemprop="image" className="u-photo d-block position-relative" aria-hidden="true"
+                    <a itemProp="image" className="u-photo d-block position-relative" aria-hidden="true"
                         href={profileImage}>
                         <img alt="" width="260" height="260"
                             className="avatar width-full height-full avatar-before-user-status"
@@ -33,8 +33,8 @@ export class Profile extends Component {
                 <div
                     className="vcard-names-container float-left col-9 col-md-12 pt-1 pt-md-3 pb-1 pb-md-3 js-sticky js-user-profile-sticky-fields">
                     <h1 className="vcard-names pl-2 pl-md-0">
-                        <span className="p-name vcard-fullname d-block overflow-hidden" itemprop="name">Shagun Bandi</span>
-                        <span className="p-nickname vcard-username d-block" itemprop="additionalName">shagunbandi</span>
+                        <span className="p-name vcard-fullname d-block overflow-hidden" itemProp="name">Shagun Bandi</span>
+                        <span className="p-nickname vcard-username d-block" itemProp="additionalName">shagunbandi</span>
                     </h1>
                 </div>
             </div>        );
