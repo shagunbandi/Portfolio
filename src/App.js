@@ -7,7 +7,7 @@ import './stylesheet/github1.css';
 import './stylesheet/github2.css';
 
 import Navbar from './components/layout/Navbar';
-import MainLayout from './components/mainLanding'
+import MainLayout from './components/mainComponents'
 
 import store from './store';
 import Footer from './components/layout/Footer';
