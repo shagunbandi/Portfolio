@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Researcher - App development for real-time irrigation scheduling",
+        "aim": "Provide the farmer with a basic application notifying him about the irrigation requirements of the crop.",
+        "technologies": [
+            "Python",
+            "Django",
+            "MySQL",
+            "APIs",
+            "Android"
+        ],
+        "org_link": "https://upload.wikimedia.org/wikipedia/en/1/1c/IIT_Kharagpur_Logo.svg",
+        "date": "Aug 2018 - Apr 2019"
+    },
+    {
+        "title": "Application Developer",
+        "aim": "Online catalogue, with easy inventory management features, and notification using whatsapp",
+        "technologies": [
+            "Django",
+            "Server Setup",
+            "Twillio"
+        ],
+        "org_link": "http://jyoticards.com/static/CardCentre/static/assets/images/agency/jyoti4.png",
+        "date": "Jul 2019 - Aug 2019"
+    },
+    {
+        "title": "Social Network",
+        "aim": "Develop a fully functional social networking website",
+        "technologies": [
+            "Django",
+            "Django Rest Framework"
+        ],
+        "date": "Oct 2017 - Nov 2018",
+        "gitUrl": "https://github.com/shagunbandi/Social-Network"
+    },
+    {
+        "title": "Text Editor",
+        "aim": "Develop a GUI Text-Editor with functionalities like spell-checker, autocomplete, MarkovText, WordPath.",
+        "technologies": [
+            "java"
+        ],
+        "date": "Jan 2018",
+        "gitUrl": "https://github.com/shagunbandi/MOOCTextEditor-master",
+        "org_link": "https://avatars3.githubusercontent.com/u/932818?s=200&v=4"
+    },
+    {
+        "title": "Dog Vision",
+        "aim": "Using Transfer Learning and TensorFlow 2.0 to Classify Different Dog Breeds.",
+        "technologies": [
+            "Transfer Learning",
+            "TensorFlow2.0",
+            "Google Colab",
+            "Python"
+        ],
+        "date": "May 2020",
+        "gitUrl": "https://github.com/shagunbandi/Dog-Vision",
+        "org_link": "https://avatars2.githubusercontent.com/u/35373879?s=200&v=4"
+    },
+    {
+        "title": "Photo Album Here",
+        "aim": "A Phots Web Application Layer for your local directory containing your precious photos. Still Working on it...",
+        "technologies": [
+            "Django",
+            "ReactJS",
+            "MySQL"
+        ],
+        "date": "Apr 2020 - Present",
+        "gitUrl": "https://github.com/shagunbandi/PhotoAlbumHere"
+    }
+]

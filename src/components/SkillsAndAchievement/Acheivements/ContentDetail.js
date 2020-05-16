@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { connect } from 'react-redux';
 
 const color = require('../../../assets/database/colors.json')
