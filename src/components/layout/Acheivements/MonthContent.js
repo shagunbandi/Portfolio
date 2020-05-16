@@ -9,20 +9,20 @@ export class MonthContent extends Component {
     render() {
 
         const { achievement } = this.props;
-        const { title, link, main_date, subtitles } = achievement;
+        const { title, link, subtitles } = achievement;
         var { links, technologies } = achievement;
-
+        var i;
         var Content = []
         if (subtitles) {
             if (!links) {
                 links = []
-                for (var i = 0; i < subtitles.length; i++) {
+                for (i = 0; i < subtitles.length; i++) {
                     links.push("#");
                 }
             }
             if (!technologies) {
                 technologies = []
-                for (var i = 0; i < subtitles.length; i++) {
+                for (i = 0; i < subtitles.length; i++) {
                     technologies.push(null);
                 }
             }
@@ -50,7 +50,6 @@ export class MonthContent extends Component {
                 <a href={link} target="_blank" className="muted-link btn-link f4 width-full " >
                     <span className="float-left ws-bold text-bold text-left">{title}</span>
                 </a>
-                {/* <time className="float-right f6 text-gray-light">{main_date}</time> */}
                 <ul className="profile-rollup-content mt-1">
                     {Content}
                 </ul>
