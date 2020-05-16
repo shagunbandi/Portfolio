@@ -7,6 +7,21 @@ import { ContentDetail } from './ContentDetail';
 export class MonthContent extends Component {
 
     render() {
+
+        const { achievement } = this.props;
+        const { title, link, main_date, subtitles, links } = achievement;
+
+        var Content = []
+        if (subtitles) {
+            subtitles.forEach((element, index) => {
+                Content.push(
+                    <ContentDetail title={element} link={links[index]}/>
+                )
+            });   
+        }
+        else {
+            Content = null;
+        }
         return (
             <div
                 className="profile-rollup-wrapper py-4 pl-4 position-relative ml-3 js-details-container Details open">
@@ -22,11 +37,13 @@ export class MonthContent extends Component {
                 <button type="button"
                     className="btn-link f4 muted-link no-underline lh-condensed width-full js-details-target "
                     aria-expanded="false">
-                    <span className="float-left ws-normal text-left">Course Completed</span>
+                    <span className="float-left ws-normal text-left">{title}</span>
                 </button>
                 <ul className="profile-rollup-content mt-1" data-repository-hovercards-enabled>
-                    <ContentDetail />
+                    {Content}
                 </ul>
+                <time className="float-right f6 text-gray-light pt-1">{main_date}</time>
+
             </div>
         );
     }

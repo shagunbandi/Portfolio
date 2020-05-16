@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 
-const color = require('../../../assets/colors.json')
+const color = require('../../../assets/database/colors.json')
 
 export class Category extends Component {
   render() {

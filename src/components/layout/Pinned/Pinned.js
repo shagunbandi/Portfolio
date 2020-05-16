@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Category } from './Category';
 
-var skills = require('../../../assets/skills.json')
+var skills = require('../../../assets/database/skills.json')
 
 export class Pinned extends Component {
 
