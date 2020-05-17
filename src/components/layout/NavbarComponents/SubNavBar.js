@@ -18,6 +18,12 @@ export class SubNavBar extends Component {
                 
                 <nav className="UnderlineNav-body" data-pjax aria-label="User profile">
 
+                    <span className={activeClass("/overview")}>
+                        <Link to="/overview" style={{ color: 'inherit', textDecoration: 'inherit' }} >
+                            Overview
+                        </Link>
+                    </span>
+
                     <span className={activeClass("/workex")}>
                         <Link to="/workex" style={{ color: 'inherit', textDecoration: 'inherit' }} >
                             Work Experience

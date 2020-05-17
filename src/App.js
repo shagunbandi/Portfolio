@@ -17,6 +17,7 @@ import Projects from './components/Project';
 import './stylesheet/App.css';
 import './stylesheet/github1.css';
 import './stylesheet/github2.css';
+import { Summary } from './components/Summary';
 
 
 class App extends Component {
@@ -44,6 +45,9 @@ class App extends Component {
                         </Route>
                         <Route path="/projects">
                           <Projects />
+                        </Route>
+                        <Route path="/overview">
+                          <Summary />
                         </Route>
                       </Switch>
 
