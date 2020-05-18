@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ColorTab } from './Components/ColourTab';
 import { ColorTop } from './Components/ColorTop';
-import ButtonTab from './Components/ButtonTab';
+import {ButtonTab} from './Components/ButtonTab';
 import { DirectoryContainer } from './Components/DirectoryConteiner';
 import {Readme} from './Components/Readme';
 

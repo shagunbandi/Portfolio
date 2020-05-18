@@ -31,7 +31,7 @@ class App extends Component {
               <main id="js-pjax-container" data-pjax-container>
                 <div className="container-xl clearfix px-3 mt-4">
                   <SideBar />
-                  <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
+                  <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2" style={{padding:"0px"}}>
 
                     <SubNavBar />
 

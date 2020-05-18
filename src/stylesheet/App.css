@@ -1,0 +1,16 @@
+
+@media (min-width:544px) {
+    .hide-when-large{display: none !important}
+}
+
+@media (max-width:544px) {
+    .hide-when-small{display: none !important}
+}
+
+.numbers-summary li {
+    padding: 10px !important;
+}
+
+overall-summary{
+    overflow: auto;
+}

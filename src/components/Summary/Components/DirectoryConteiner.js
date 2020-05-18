@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
+import profileImage from '../../../assets/profileImage.jpg'
 
 
 export class DirectoryContainer extends Component {
@@ -11,28 +12,20 @@ export class DirectoryContainer extends Component {
                 <div class="Box-header Box-header--blue position-relative "
                     style={{ marginBottom: "1px" }}>
                     <div class="commit-tease js-details-container Details d-flex rounded-top-1 flex-auto" data-issue-and-pr-hovercards-enabled>
-
-
+                        
                         <div class="AvatarStack flex-self-start ">
-                            <div class="AvatarStack-body" aria-label="shagunbandi">
-                                <a class="avatar avatar-user" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/shagunbandi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/shagunbandi">
-                                    <img height="20" width="20" alt="@shagunbandi" src="https://avatars1.githubusercontent.com/u/18301341?s=60&amp;u=03931fadfdfe71667c4a4544c67bedf89442c045&amp;v=4" class=" avatar-user" />
-                                </a>  </div>
+                            <img height="20" width="20" alt="@shagunbandi" src={profileImage} />
                         </div>
-
+                        
                         <div class="flex-auto f6 mr-3">
-
-                            <a href="/shagunbandi/PhotoAlbumHere/commits?author=shagunbandi"
-                                class="commit-author tooltipped tooltipped-s user-mention"
-                                aria-label="View all commits by shagunbandi">&nbsp;shagunbandi&nbsp;</a>
+                            <span className="text-bold">shagunbandi&nbsp;</span>
                             <span>Updated Overview.md</span>
 
                         </div>
-                        <div class="no-wrap d-flex flex-self-start flex-items-baseline">
-                            <span>Latest commit &nbsp;</span>
-                            <span>:D&nbsp;</span>
-                            <span>18th May, 2020</span>
+                        <div class="d-flex flex-self-start flex-items-baseline">
+                            <span>Latest commit :D 20th May, 2020</span>
                         </div>
+                        
                     </div>
                 </div>
                 <h2 id="files" class="sr-only">Files</h2>
