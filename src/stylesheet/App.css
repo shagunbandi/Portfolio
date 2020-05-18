@@ -14,3 +14,16 @@
 overall-summary{
     overflow: auto;
 }
+
+.btn-link {
+    white-space: unset !important;
+}
+
+.span-filename {
+    cursor:pointer;
+    color:#0366d6;
+}
+
+.span-filename:hover {
+    text-decoration: underline;
+}

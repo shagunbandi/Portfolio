@@ -1,10 +1,6 @@
 import { combineReducers } from 'redux';
-import albumReducer from './albumReducer';
-import photosReducer from './photosReducer';
-import galleryReducer from './galleryReducer';
+import fileReducer from './fileReducer';
 
 export default combineReducers({
-  album: albumReducer,
-  photos: photosReducer,
-  gallery: galleryReducer
+  file: fileReducer
 });
