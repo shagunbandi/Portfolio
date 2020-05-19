@@ -7,7 +7,7 @@ export class ContentDetail extends Component {
 
     render() {
 
-        const { title, date, link, technologies } = this.props;
+        const { title, date, technologies } = this.props;
 
         var techs = [];
         if (technologies) {

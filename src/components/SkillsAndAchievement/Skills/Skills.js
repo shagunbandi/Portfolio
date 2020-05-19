@@ -9,9 +9,7 @@ export class Skills extends Component {
 
   render() {
     var SkillCategory = []
-    Object.keys(skills).map((key, index) => {
-      SkillCategory.push(<Category skillTitle={key} skillNames={skills[key]} />)
-    });
+    Object.keys(skills).map((key, index) => SkillCategory.push(<Category skillTitle={key} skillNames={skills[key]} />));
 
     return (
       <div className="mt-4">

@@ -47,7 +47,7 @@ export class MonthContent extends Component {
                     </svg>
                 </span>
 
-                <a href={link} target="_blank" className="muted-link btn-link f4 width-full " >
+                <a href={link} target="_blank" rel="noopener noreferrer" className="muted-link btn-link f4 width-full " >
                     <span className="float-left ws-bold text-bold text-left">{title}</span>
                 </a>
                 <ul className="profile-rollup-content mt-1">

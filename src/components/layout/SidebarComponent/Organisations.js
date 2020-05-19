@@ -17,6 +17,7 @@ export class Organisations extends Component {
             content.push(
                 <a href={organisation.website}
                     target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={organisation.title}
                     className="avatar-group-item"
                     style={{margin:"2px"}}>

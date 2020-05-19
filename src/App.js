@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link } from 'react-router-dom';
+} from 'react-router-dom';
 import { SubNavBar } from './components/layout/NavbarComponents/SubNavBar';
 import SideBar from './components/layout/SidebarComponent'
 import Navbar from './components/layout/Navbar';
@@ -18,6 +18,7 @@ import './stylesheet/App.css';
 import './stylesheet/github1.css';
 import './stylesheet/github2.css';
 import { Summary } from './components/Summary';
+import Photography from './components/Photography';
 
 
 class App extends Component {
@@ -31,10 +32,8 @@ class App extends Component {
               <main id="js-pjax-container" data-pjax-container>
                 <div className="container-xl clearfix px-3 mt-4">
                   <SideBar />
-                  <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2" style={{padding:"0px"}}>
-
+                  <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2" style={{ padding: "0px" }}>
                     <SubNavBar />
-
                     <div className="position-relative">
                       <Switch>
                         <Route path="/skills">
@@ -49,13 +48,18 @@ class App extends Component {
                         <Route path="/overview">
                           <Summary />
                         </Route>
+                        <Route path="/photography">
+                          <Photography />
+                        </Route>
+                        <Route path="/">
+                          <Summary />
+                        </Route>
                       </Switch>
-
-                      </div>
-
+                    </div>
                   </div>
                 </div>
-              </main></div>
+              </main>
+            </div>
             <Footer />
           </div>
         </Router>

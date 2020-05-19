@@ -31,9 +31,9 @@ export class Category extends Component {
                 </path>
               </svg>
 
-              <a href="#" class="text-bold flex-auto min-width-0 ">
+              <span href="#" class="text-bold flex-auto min-width-0 span-filename">
                 <span className="repo" title={skillTitle}>{skillTitle}</span>
-              </a>
+              </span>
             </div>
             <hr/>
             <p className="mb-0 f6 text-gray"
