@@ -1,38 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import logo from '../../assets/images/logo.svg'
 
-import CompanyLogo from './NavbarComponents/CompanyLogo'
-import NavBarItems from './NavbarComponents/NavBarItems';
-import { SearchBar } from './NavbarComponents/SearchBar';
 
-function Navbar() {
-  return (
-
-    <div className="position-relative js-header-wrapper ">
-      <header className="Header py-lg-0 js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
-
-        <CompanyLogo />
-
-        {/* <!-- For Collapsed Menu  --> */}
-        <div className="Header-item d-lg-none">
-          <button className="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation"
-            aria-expanded="false">
-            <svg height="24" className="octicon octicon-three-bars" viewBox="0 0 12 16" version="1.1" width="18"
-              aria-hidden="true">
-              <path fillRule="evenodd"
-                d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z">
-              </path>
-            </svg>
-          </button>
-        </div>
-
-        <div
-          className="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
-          <SearchBar />
-          <NavBarItems />
-        </div>
-      </header>
-    </div>
-  );
+export class Navbar extends Component {
+  render() {
+    return (
+      <div className="position-relative">
+        <header className="Header py-0 px-2">
+          <a className="Header-link px-1" href="/">
+            <img src={logo} height="32" alt="SB" />
+          </a>
+          <a className="Header-link py-3 px-1"
+            href="/">SHAGUN BANDI</a>
+        </header>
+      </div>
+    );
+  }
 }
-
-export default Navbar;
+export default connect()(Navbar);

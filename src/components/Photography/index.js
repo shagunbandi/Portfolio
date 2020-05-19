@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const img = require('../../assets/profileImage.jpg')
+const img = require('../../assets/images/profileImage.jpg')
 
 export class Summary extends Component {
 
@@ -11,16 +11,13 @@ export class Summary extends Component {
     }
 
     render() {
-
-
-
         return (
             <div class="container-lg clearfix new-discussion-timeline  px-3">
                 <br />
                 <div className="container" style={{ width: "100%" }}>
                     <div className="col-md-12 row">
                         <span className="col-md-6">
-                            <div id="readme" className="Box md js-code-block-container Box--condensed">
+                            <div id="readme" className="Box md Box--condensed">
                                 <div className="Box-header d-flex flex-items-center flex-justify-between ">
                                     <h2 className="Box-title pr-3">
                                         <svg className="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">

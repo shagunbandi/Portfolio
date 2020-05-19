@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import profileImage from '../../../assets/profileImage.jpg'
-
-import { connect } from 'react-redux';
-
+import profileImage from '../../../assets/images/profileImage.jpg'
 
 export class Profile extends Component {
 
@@ -10,7 +7,7 @@ export class Profile extends Component {
         return (
             <div className="clearfix">
                 <div className="float-left col-3 col-md-12 pr-3 pr-md-0" style={{ padding: "0" }}>
-                    <a itemProp="image" className="u-photo d-block position-relative" aria-hidden="true"
+                    <a itemProp="image" className="u-photo d-block position-relative"
                         href={profileImage}>
                         <img alt="" width="260" height="260"
                             className="avatar width-full height-full avatar-before-user-status"
@@ -21,7 +18,7 @@ export class Profile extends Component {
                 <div className="float-md-left col-12" style={{padding:"0"}}>
                     <div className="user-status-container border position-relative hide-sm hide-md ">
                         <div className="d-flex">
-                            <div className="d-flex p-2 width-full " data-team-hovercards-enabled>
+                            <div className="d-flex p-2 width-full">
                                 <div className="user-status-message-wrapper f6 mt-1 text-gray-dark ws-normal " >
                                     <div>Working from home</div>
                                 </div>
@@ -31,14 +28,15 @@ export class Profile extends Component {
                 </div>
 
                 <div
-                    className="vcard-names-container float-left col-9 col-md-12 pt-1 pt-md-3 pb-1 pb-md-3 js-sticky js-user-profile-sticky-fields"
+                    className="vcard-names-container float-left col-9 col-md-12 pt-1 pt-md-3 pb-1 pb-md-3"
                     style={{ padding: "0" }}>
                     <h1 className="vcard-names pl-2 pl-md-0">
-                        <span className="p-name vcard-fullname d-block overflow-hidden" itemProp="name">Shagun Bandi</span>
-                        <span className="p-nickname vcard-username d-block" itemProp="additionalName">shagunbandi</span>
+                        <span className="p-name vcard-fullname d-block overflow-hidden">Shagun Bandi</span>
+                        <span className="p-nickname vcard-username d-block">shagunbandi</span>
                     </h1>
                 </div>
-            </div>        );
+            </div>
+        );
     }
 }
-export default connect()(Profile);
+export default Profile;

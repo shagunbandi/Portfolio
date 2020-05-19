@@ -37,7 +37,7 @@ export class MonthContent extends Component {
         }
         return (
             <div
-                className="profile-rollup-wrapper py-4 pl-4 position-relative ml-3 js-details-container Details open">
+                className="profile-rollup-wrapper py-4 pl-4 position-relative ml-3 Details open">
                 <span className="discussion-item-icon">
                     <svg className="octicon octicon-repo" viewBox="0 0 12 16"
                         version="1.1" width="12" height="16" aria-hidden="true">
@@ -47,7 +47,7 @@ export class MonthContent extends Component {
                     </svg>
                 </span>
 
-                <a href={link} target="_blank" rel="noopener noreferrer" className="muted-link btn-link f4 width-full " >
+                <a href={link} target="_blank" rel="noopener noreferrer" className="muted-link btn-link f4 width-full ws-unset" >
                     <span className="float-left ws-bold text-bold text-left">{title}</span>
                 </a>
                 <ul className="profile-rollup-content mt-1">

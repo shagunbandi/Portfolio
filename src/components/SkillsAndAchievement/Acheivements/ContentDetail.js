@@ -27,8 +27,8 @@ export class ContentDetail extends Component {
 
         return (
             <li className="d-block mt-1 py-1">
-                <span className="css-truncate css-truncate-target">
-                    <span className="mr-2 ">{title}</span>
+                <span className="mr-2 ws-unset">
+                    {title}
                 </span>
 
                 <span className="f6 text-gray d-block mt-1 d-lg-inline mt-lg-0">

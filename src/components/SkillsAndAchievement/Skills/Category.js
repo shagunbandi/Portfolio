@@ -21,7 +21,7 @@ export class Category extends Component {
     return (
       <li className="col-12 col-md-6 col-lg-6 mb-3 d-flex flex-content-stretch">
         <div
-          className="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item">
+          className="Box pinned-item-list-item d-flex p-3 width-full public source">
           <div className="pinned-item-list-item-content">
             <div className="d-flex width-full flex-items-center position-relative">
               <svg className="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16"

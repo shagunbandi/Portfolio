@@ -17,10 +17,10 @@ export class SubNavBar extends Component {
         const activeClass = (route) => { return route === this.state.selected ? "UnderlineNav-item mr-0 mr-md-1 mr-lg-3 selected" : "UnderlineNav-item mr-0 mr-md-1 mr-lg-3" }
 
         return (
-            <div className="UnderlineNav width-full user-profile-nav js-sticky top-0">
+            <div className="UnderlineNav width-full user-profile-nav top-0">
 
                 {/* TODO Fix the sub navbar issue */}
-                <nav className="UnderlineNav-body" data-pjax aria-label="User profile">
+                <nav className="UnderlineNav-body">
 
                     <span className={activeClass(1)}>
                         <Link to="/overview" style={{ color: 'inherit', textDecoration: 'inherit' }} >

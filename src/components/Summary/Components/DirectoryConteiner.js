@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import profileImage from '../../../assets/profileImage.jpg'
+import profileImage from '../../../assets/images/profileImage.jpg'
 import { EachRow } from './EachRow';
 
 
@@ -20,7 +20,7 @@ export class DirectoryContainer extends Component {
             <div class="Box mb-3 Box--condensed">
                 <div class="Box-header Box-header--blue position-relative "
                     style={{ marginBottom: "1px" }}>
-                    <div class="commit-tease js-details-container Details d-flex rounded-top-1 flex-auto" data-issue-and-pr-hovercards-enabled>
+                    <div class="commit-tease Details d-flex rounded-top-1 flex-auto">
                         
                         <div class="AvatarStack flex-self-start ">
                             <img height="20" width="20" alt="@shagunbandi" src={profileImage} />
@@ -39,18 +39,11 @@ export class DirectoryContainer extends Component {
                 </div>
                 <h2 id="files" class="sr-only">Files</h2>
 
-
-
-                <include-fragment src="/shagunbandi/PhotoAlbumHere/file-list/master">
-                    <table class="files js-navigation-container js-active-navigation-container " data-pjax>
-                        <tbody>
-                            {content}
-                        </tbody>
-                    </table>
-
-                </include-fragment>
-
-
+                <table class="files">
+                    <tbody>
+                        {content}
+                    </tbody>
+                </table>
             </div>
 
         );

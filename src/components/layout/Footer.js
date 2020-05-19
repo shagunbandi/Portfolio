@@ -27,17 +27,13 @@ function Footer() {
 
                 <ul
                     className="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-                    <li className="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact"
-                        href="https://github.com/contact">Contact GitHub</a></li>
-                    <li className="mr-3 mr-lg-0"><a href="https://github.com/pricing"
-                        data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
-                    <li className="mr-3 mr-lg-0"><a href="https://developer.github.com"
-                        data-ga-click="Footer, go to api, text:api">API</a></li>
-                    <li className="mr-3 mr-lg-0"><a href="https://training.github.com"
-                        data-ga-click="Footer, go to training, text:training">Training</a></li>
-                    <li className="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a>
+                    <li className="mr-3 mr-lg-0"><a href="https://github.com/contact">Contact GitHub</a></li>
+                    <li className="mr-3 mr-lg-0"><a href="https://github.com/pricing">Pricing</a></li>
+                    <li className="mr-3 mr-lg-0"><a href="https://developer.github.com">API</a></li>
+                    <li className="mr-3 mr-lg-0"><a href="https://training.github.com">Training</a></li>
+                    <li className="mr-3 mr-lg-0"><a href="https://github.blog">Blog</a>
                     </li>
-                    <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+                    <li><a href="https://github.com/about">About</a></li>
                 </ul>
 
             </div>

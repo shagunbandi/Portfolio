@@ -15,7 +15,7 @@ overall-summary{
     overflow: auto;
 }
 
-.btn-link {
+.ws-unset {
     white-space: unset !important;
 }
 

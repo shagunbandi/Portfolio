@@ -22,20 +22,15 @@ export class Timeline extends Component {
 
         return (
             <div className="mt-4 position-relative">
-                <div id="js-contribution-activity" className="activity-listing contribution-activity" data-pjax-container>
-
                     {/* <YearsSidebar /> */}
                     
                     <h2 className="f4 text-bold mb-2">Achievements</h2>
-                    <div className="contribution-activity-listing float-left col-12 col-lg-10">
+                    <div className="float-left col-12 col-lg-10">
                         {Months}
                     </div>
 
-                    <div className="">
-                        <button name="button" type="submit"
-                            className="btn btn-outline border-gray-dark width-full f6 mt-0 py-2">Yupp That's it</button>
-                    </div>
-                </div>
+                <button name="button" type="submit"
+                    className="btn btn-outline border-gray-dark width-full f6 mt-0 py-2">Yupp That's it</button>
             </div>
         );
     }

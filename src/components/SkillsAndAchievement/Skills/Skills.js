@@ -13,12 +13,10 @@ export class Skills extends Component {
 
     return (
       <div className="mt-4">
-        <div className="js-pinned-items-reorder-container">
-          <h2 className="f4 mb-2 text-bold">Technical Skills</h2>
-          <ol className="d-flex flex-wrap list-style-none gutter-condensed mb-4 js-pinned-items-reorder-list">
-            {SkillCategory}
-          </ol>
-        </div>
+        <h2 className="f4 mb-2 text-bold">Technical Skills</h2>
+        <ol className="d-flex flex-wrap list-style-none gutter-condensed mb-4">
+          {SkillCategory}
+        </ol>
       </div>
     );
   }

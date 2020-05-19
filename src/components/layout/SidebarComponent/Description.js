@@ -7,7 +7,7 @@ export class Description extends Component {
 
     render() {
         return (
-            <div className="p-note user-profile-bio mb-2 js-user-profile-bio">
+            <div className="p-note user-profile-bio mb-2">
                 <div>
                     Associate Software Development Engineer at Publicis Sapient
               </div>

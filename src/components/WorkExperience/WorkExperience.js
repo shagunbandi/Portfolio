@@ -33,7 +33,7 @@ export class ProjectComponent extends Component {
             <li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code" style={{ padding: "0px" }}>
                 <div class="col-10 col-lg-9 d-inline-block">
                     <div class="d-inline-block mb-1">
-                        <h3 class="wb-break-all">
+                        <h3>
                             <a href={link} itemprop="name" >{title}</a>
                         </h3>
                     </div>

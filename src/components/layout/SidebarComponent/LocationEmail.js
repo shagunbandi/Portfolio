@@ -8,11 +8,10 @@ export class LocationEmail extends Component {
     render() {
         return (
             <div className="d-none d-md-block">
-                <div className="js-profile-editable-area">
-                    <div className="p-note user-profile-bio mb-2 js-user-profile-bio"></div>
+                    <div className="p-note user-profile-bio mb-2"></div>
                     <ul className="vcard-details mb-3">
                         <li
-                            className="vcard-detail pt-1 css-truncate css-truncate-target">
+                            className="vcard-detail pt-1">
                             <svg className="octicon octicon-location"
                                 viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
                                 <path fillRule="evenodd"
@@ -33,8 +32,8 @@ export class LocationEmail extends Component {
                                 href="mailto:&#x73;&#x68;&#x61;&#x67;&#x75;&#x6e;&#x61;&#x6d;&#x69;&#x74;&#x62;&#x61;&#x6e;&#x64;&#x69;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x73;&#x68;&#x61;&#x67;&#x75;&#x6e;&#x61;&#x6d;&#x69;&#x74;&#x62;&#x61;&#x6e;&#x64;&#x69;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a>
                         </li>
                     </ul>
-                </div>
-            </div>        );
+            </div>
+        );
     }
 }
 export default connect()(LocationEmail);
