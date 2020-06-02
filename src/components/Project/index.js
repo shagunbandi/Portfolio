@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {ProjectComponent} from '../WorkExperience/WorkExperience'
+import { ProjectComponent } from './ProjectComponent'
 
-const projects = require('../../assets/database/projects.json')
 const color = require('../../assets/database/colors.json')
 
 
 export class Projects extends Component {
     render() {
+
+        const { projects } = this.props;
 
         function getColorSkillMap() {
             var allSkills = []
@@ -37,7 +38,7 @@ export class Projects extends Component {
         var content = []
         projects.forEach(project => {
             content.push(
-                <ProjectComponent project={project} colorSkillMap={colorSkillMap}/>
+                <ProjectComponent project={project} colorSkillMap={colorSkillMap} />
             )
         });
         return (

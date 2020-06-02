@@ -12,7 +12,7 @@ import store from './store';
 import Footer from './components/layout/Footer';
 import { SkillsAndAchievment} from './components/SkillsAndAchievement';
 import {WorkExperience} from './components/WorkExperience';
-import Projects from './components/Project';
+import { PersonalProject} from './components/PersonalProject';
 
 import './stylesheet/App.css';
 import './stylesheet/github1.css';
@@ -40,7 +40,7 @@ class App extends Component {
                           <WorkExperience />
                         </Route>
                         <Route path="/projects">
-                          <Projects />
+                          <PersonalProject />
                         </Route>
                         <Route path="/overview">
                           <Summary />
