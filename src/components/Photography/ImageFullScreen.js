@@ -55,6 +55,7 @@ export class ImageFullScreen extends Component {
                     <div className="row p-3 height-80vh">
                         <div className="col-md-3 center-everything">
                             <div className="left-text">
+                                {/* <p>close X</p> */}
                                 <h1>{title}</h1>
                                 <hr />
                                 {/* <h2>{subtitle}</h2> */}
