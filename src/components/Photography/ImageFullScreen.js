@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-// const photo1 = require('../../assets/images/photography/photo1.jpg')
-const photo1 = require('../../assets/images/photography/landscape2.jpg')
-
-
 export class ImageFullScreen extends Component {
 
     constructor(props) {
@@ -49,8 +45,8 @@ export class ImageFullScreen extends Component {
                             <div className="left-text">
                                 <h1>{title}</h1>
                                 <hr />
-                                <h2>{subtitle}</h2>
-                                <br />
+                                {/* <h2>{subtitle}</h2> */}
+                                {/* <br /> */}
                                 <p>{description}</p>
                             </div>
                         </div>
