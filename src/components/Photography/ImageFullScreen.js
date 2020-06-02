@@ -1,0 +1,69 @@
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+// const photo1 = require('../../assets/images/photography/photo1.jpg')
+const photo1 = require('../../assets/images/photography/landscape2.jpg')
+
+
+export class ImageFullScreen extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            selected:1
+        };
+    }
+
+    selectThisImage = (index) => {
+        this.setState({ selected: index });
+    }
+
+    render() {
+
+        const { photos } = this.props;
+        var content = []
+        photos.forEach((photo, index) => {
+            if (index === this.state.selected) {
+                content.push(
+                    <img src={photo.photo} alt={photo.title} className="minbar-items selected-image" onClick={() => { this.selectThisImage(index) }} />
+                )
+            }
+            else{
+                content.push(
+                    <img src={photo.photo} alt={photo.title} className="minbar-items image-hover-effect-negative" onClick={() => { this.selectThisImage(index)}}/>
+                )
+            }
+        });
+
+        const selectedImageObject = photos[this.state.selected];
+        const selectedImage = selectedImageObject.photo;
+        const description = selectedImageObject.description;
+        const title = selectedImageObject.title;
+        const subtitle = "Clicked By Bandi"
+        
+        return (
+            <div>
+                <div className="">
+                    <div className="row p-3 height-80vh">
+                        <div className="col-md-3 center-everything">
+                            <div className="left-text">
+                                <h1>{title}</h1>
+                                <hr />
+                                <h2>{subtitle}</h2>
+                                <br />
+                                <p>{description}</p>
+                            </div>
+                        </div>
+                        <div className="col-md-9 image-div center-everything">
+                            <img src={selectedImage} alt="img1" className="img-style" />
+                        </div>
+                    </div>
+                    <div className="height-20vh minibar">
+                        {content}
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+export default connect()(ImageFullScreen);

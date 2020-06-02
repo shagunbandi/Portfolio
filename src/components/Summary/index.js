@@ -5,20 +5,7 @@ import { ColorTop } from './Components/ColorTop';
 import {ButtonTab} from './Components/ButtonTab';
 import { DirectoryContainer } from './Components/DirectoryConteiner';
 import {Readme} from './Components/Readme';
-
-import overview from '../../assets/database/summary/overview';
-import work from '../../assets/database/summary/work';
-
-const fileDetails = [
-    {
-        title: "OVERVIEW.md",
-        content: overview,
-    },
-    {
-        title: "WORK.md",
-        content: work,
-    }
-]
+import fileDetails from '../../assets/database/summary/fileDetails'
 
 export class Summary extends Component {
 

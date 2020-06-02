@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://localhost:3000",
+  "homepage": "https://shagunbandi.github.io/Portfolio/",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "react": "^16.7.0",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "npm run build&&gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

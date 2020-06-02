@@ -27,3 +27,71 @@ overall-summary{
 .span-filename:hover {
     text-decoration: underline;
 }
+
+.image-hover-effect {
+    -webkit-transition: .1s all;
+}
+
+.image-hover-effect:hover {
+    -webkit-filter: brightness(50%);
+    cursor: pointer;
+}
+
+.image-hover-effect-negative {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: .1s all;
+}
+
+.image-hover-effect-negative:hover {
+    -webkit-filter: brightness(100%);
+    cursor: pointer;
+}
+
+.selected-image {
+    border: 2px solid white !important;
+}
+
+.full-screen-ui {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: black;
+}
+
+.img-style {
+    max-height: 80vh;
+    max-width: 100%;
+}
+
+.image-div{
+    text-align: center;
+}
+
+.center-everything {
+    margin: auto
+}
+
+.left-text{
+    color: white;
+}
+
+.height-80vh{
+    height: 85vh;
+}
+
+.minibar{
+    width: 100%;
+    height: 15vh;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.minbar-items{
+    height: 100%;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+}

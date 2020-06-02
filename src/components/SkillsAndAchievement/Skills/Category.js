@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 
-const color = require('../../../assets/database/colors.json')
+// const color = require('../../../assets/database/colors.json')
 
 export class Category extends Component {
   render() {
     
-    const { skillTitle, skillNames } = this.props;
+    const { skillTitle, skillNames, colors } = this.props;
     const ProgrammingLanguages = skillNames.map((value, index) => {
-      const ind = index % color.length;
       return (
         <span className="d-inline-block mr-3 mb-1">
-          <span className="repo-language-color" style={{ backgroundColor: color[ind], marginLeft:"6px"}}></span>
-          <span itemProp={value} style={{marginLeft:"4px", marginRight:"6px"}}>{value}</span>
+          <span className="repo-language-color" style={{ backgroundColor: colors[value], marginLeft:"6px"}}></span>
+          <span style={{marginLeft:"4px", marginRight:"6px"}}>{value}</span>
         </span>
       )
     });

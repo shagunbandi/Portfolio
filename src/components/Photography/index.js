@@ -1,45 +1,96 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { ImageBox } from './ImageBox';
+import {ImageFullScreen} from './ImageFullScreen';
 
-const img = require('../../assets/images/profileImage.jpg')
+const photo1 = require('../../assets/images/photography/photo1.jpg')
+const photo2 = require('../../assets/images/photography/photo2.jpg')
+const photo6 = require('../../assets/images/photography/photo6.jpg')
+const photo8 = require('../../assets/images/photography/photo8.jpg')
+const photo12 = require('../../assets/images/photography/photo12.jpg')
 
-export class Summary extends Component {
+const photo1_square = require('../../assets/images/photography/photo1_square.jpg')
+const photo2_square = require('../../assets/images/photography/photo2_square.jpg')
+const photo6_square = require('../../assets/images/photography/photo6_square.jpg')
+const photo8_square = require('../../assets/images/photography/photo8_square.jpg')
+const photo12_square = require('../../assets/images/photography/photo12_square.jpg')
+
+const squirrlel = require('../../assets/images/photography/landscape2.jpg')
+
+
+const photos = [
+    {
+        title: "Sigree Gobal Grill",
+        photo: photo1,
+        description: "Sigree Gobal Grill",
+        square: photo1_square
+    },
+    {
+        title: "Dawki",
+        photo: photo12,
+        description: "Dawki",
+        square: photo12_square
+    },
+    {
+        title: "Dawki",
+        photo: photo2,
+        description: "Dawki",
+        square: photo2_square
+    },
+    {
+        title: "shravanbelgola",
+
+        photo: photo6,
+        description: "shravanbelgola",
+        square: photo6_square
+    },
+    {
+        title: "Lamp",
+        photo: photo8,
+        description: "Lamp",
+        square: photo8_square
+    }
+]
+
+export class Photography extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            fullUI: false
+        };
+    }
+
+    showFullUI = () => {
+        console.log("Showing Full UI")
+        this.setState({ fullUI: true });
     }
 
     render() {
+
+        var content = []
+        photos.forEach(photo => {
+            content.push(
+                <ImageBox img={photo.photo} title={photo.description} square={photo.square}/>
+            )
+        });
+
         return (
             <div class="container-lg clearfix new-discussion-timeline  px-3">
                 <br />
+                <h1 style={{ textAlign: "center" }}>Photography</h1>
+                <hr />
+                <span style={{ textAlign: "right", width: "100%" }}><p className="span-filename" onClick={() => {this.showFullUI()}}>I Wish the UI was better for Photos</p></span>
                 <div className="container" style={{ width: "100%" }}>
-                    <div className="col-md-12 row">
-                        <span className="col-md-6">
-                            <div id="readme" className="Box md Box--condensed">
-                                <div className="Box-header d-flex flex-items-center flex-justify-between ">
-                                    <h2 className="Box-title pr-3">
-                                        <svg className="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path>
-                                        </svg> asdf
-                                </h2>
-                                </div>
-                                <div class="Box-body" style={{ padding: "0px" }}>
-
-                                    <img src={img} style={{ width: "100%" }} alt="Profile" />
-                                </div>
-                            </div>
-                        </span>
-
-
-                        {/* <span className="col-md-6" style={{ backgroundColor: "red" }}>span</span> */}
-                        {/* <span className="col-md-6" style={{ backgroundColor: "blue" }}>span</span> */}
-                        {/* <span className="col-md-6" style={{ backgroundColor: "green" }}>span</span> */}
+                    <div className="col-md-12 row p-0 m-0">
+                        {content}
                     </div>
                 </div>
+                {this.state.fullUI ? <div className="full-screen-ui">
+                    <ImageFullScreen photos={photos}/>
+                </div> : <span/>}
             </div>
         );
     }
 }
-export default connect()(Summary);
+export default connect()(Photography);

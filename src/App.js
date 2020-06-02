@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -18,7 +18,7 @@ import './stylesheet/App.css';
 import './stylesheet/github1.css';
 import './stylesheet/github2.css';
 import { Summary } from './components/Summary';
-import Photography from './components/Photography';
+import {Photography} from './components/Photography';
 
 
 class App extends Component {

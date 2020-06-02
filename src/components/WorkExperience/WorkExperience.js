@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-const color = require('../../assets/database/colors.json')
-
 
 export class ProjectComponent extends Component {
 
     render() {
 
         const { title, aim, technologies, org_link, date, link, gitUrl } = this.props.project;
+        const { colorSkillMap } = this.props;
 
         var techs = [];
         if (technologies) {
             technologies.forEach((tech, index) => {
-                const ind = index % color.length;
                 techs.push(
-                    <span className="ml-0">
-                        <span className="repo-language-color" style={{ backgroundColor: color[ind], marginLeft: "6px" }}></span>
+                    <span className="ml-0 d-inline-block">
+                        <span className="repo-language-color" style={{ backgroundColor: colorSkillMap[tech], marginLeft: "6px" }}></span>
                         <span itemProp="programmingLanguage" style={{ marginLeft: "4px", marginRight: "6px" }}>{tech}</span>
                     </span>
                 )
@@ -26,11 +24,8 @@ export class ProjectComponent extends Component {
             techs = null;
         }
 
-        console.log(gitUrl);
-
-
         return (
-            <li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code" style={{ padding: "0px" }}>
+            <li class="col-12 d-flex width-full py-4 border-bottom public source" style={{ padding: "0px" }}>
                 <div class="col-10 col-lg-9 d-inline-block">
                     <div class="d-inline-block mb-1">
                         <h3>

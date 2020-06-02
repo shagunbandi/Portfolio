@@ -14,7 +14,7 @@ export class ContentDetail extends Component {
             technologies.forEach((tech, index) => {
                 const ind = index % color.length;
                 techs.push(
-                    <span className="ml-0">
+                    <span className="ml-0 d-inline-block">
                         <span className="repo-language-color" style={{ backgroundColor: color[ind], marginRight: "4px", marginLeft: "4px"}}></span>
                         <span itemProp="programmingLanguage">{tech}</span>
                     </span>

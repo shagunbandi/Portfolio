@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import cv from '../../../assets/shagunbandi.pdf';
+import cv from '../../../assets/ShagunBandiResume.pdf';
 
 
 export class ButtonTab extends Component {
