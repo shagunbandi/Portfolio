@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ArrowKeysReact from 'arrow-keys-react';
 
 export class ImageFullScreen extends Component {
 
@@ -15,8 +16,20 @@ export class ImageFullScreen extends Component {
     }
 
     render() {
-
+        
         const { photos } = this.props;
+
+        ArrowKeysReact.config({
+            left: () => {
+                let prevImage = (photos.length + this.state.selected - 1) % photos.length;
+                this.setState({ selected: prevImage });
+            },
+            right: () => {
+                let nextImage = (this.state.selected + 1) % photos.length;
+                this.setState({ selected: nextImage});
+            }
+        });
+
         var content = []
         photos.forEach((photo, index) => {
             if (index === this.state.selected) {
@@ -35,10 +48,9 @@ export class ImageFullScreen extends Component {
         const selectedImage = selectedImageObject.photo;
         const description = selectedImageObject.description;
         const title = selectedImageObject.title;
-        const subtitle = "Clicked By Bandi"
         
         return (
-            <div>
+            <div {...ArrowKeysReact.events} tabIndex="1">
                 <div className="">
                     <div className="row p-3 height-80vh">
                         <div className="col-md-3 center-everything">

@@ -28,12 +28,12 @@ export class Photography extends Component {
         });
 
         return (
-            <div class="container-lg clearfix new-discussion-timeline  px-3">
+            <div class="container-lg clearfix new-discussion-timeline">
                 <br />
                 <h1 style={{ textAlign: "center" }}>Photography</h1>
                 <hr />
-                <span style={{ textAlign: "right", width: "100%" }}><p className="span-filename" onClick={() => {this.showFullUI()}}>I Wish the UI was better for Photos</p></span>
-                <div className="container" style={{ width: "100%" }}>
+                <span style={{ textAlign: "right", width: "100%" }}><p className="span-filename" onClick={() => {this.showFullUI()}}>View in Full Screen (Beta)</p></span>
+                <div style={{ width: "100%" }}>
                     <div className="col-md-12 row p-0 m-0">
                         {content}
                     </div>

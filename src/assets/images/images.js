@@ -43,6 +43,60 @@ import squareImage200 from './photography/instagram_square/200.jpg'
 
 export const images = [
     {
+        title: "गिलहरी",
+        photo: image130,
+        description: "Jahaz Mahal, Mandava(Mandu), India",
+        square: squareImage130
+    },
+    {
+        title: "Sky above, Earth Below, and Peace within",
+        photo: image70,
+        description: "Double Deckar Bridge, Meghalaya",
+        square: squareImage70
+    },
+    {
+        title: "Architecture should speak of it’s time and place, but yearn for timelessness.",
+        photo: image120,
+        description: "Rani Rupmati Mahal, Mandu, India",
+        square: squareImage120
+    },
+    {
+        title: "Hmm...",
+        photo: image110,
+        description: "Sigri Global Grill Kolkata, India",
+        square: squareImage110
+    },
+    {
+        title: "These are flowers that fly and all but sing - 'Blue-Butterfly Day,' Robert Frost",
+        photo: image80,
+        description: "Lal Bagh Botanical Garden Banglore, India",
+        square: squareImage80
+    },
+    {
+        title: "Every Flower Blooms on its own time",
+        photo: image140,
+        description: "Bagh, Madhya Pradesh, India",
+        square: squareImage140
+    },
+    {
+        title: "Beautiful Architecture",
+        photo: image90,
+        description: "Hiranandani Garden Powai, Mumbai, India",
+        square: squareImage90
+    },
+    {
+        title: "Think Peace",
+        photo: image200,
+        description: "Egypt",
+        square: squareImage200
+    },
+    {
+        title: "An early morning walk is a blessing for whole day - Henry David Thoreau",
+        photo: image50,
+        description: "Ralamandal WIldlife Sanctuary, India",
+        square: squareImage50
+    },
+    {
         title: "Mood: Feelin' Cozy",
         photo: image10,
         description: "Bengaluru, India",
@@ -67,64 +121,16 @@ export const images = [
         square: squareImage40
     },
     {
-        title: "An early morning walk is a blessing for whole day - Henry David Thoreau",
-        photo: image50,
-        description: "Ralamandal WIldlife Sanctuary, India",
-        square: squareImage50
-    },
-    {
         title: "Sui Dhaaga",
         photo: image60,
         description: "Dahab, Three Pools, Egypt",
         square: squareImage60
     },
     {
-        title: "Sky above, Earth Below, and Peace within",
-        photo: image70,
-        description: "Double Deckar Bridge, Meghalaya",
-        square: squareImage70
-    },
-    {
-        title: "These are flowers that fly and all but sing - 'Blue-Butterfly Day,' Robert Frost",
-        photo: image80,
-        description: "Lal Bagh Botanical Garden Banglore, India",
-        square: squareImage80
-    },
-    {
-        title: "Beautiful Architecture",
-        photo: image90,
-        description: "Hiranandani Garden Powai, Mumbai, India",
-        square: squareImage90
-    },
-    {
         title: "The only thing I like better than talking about Food is eating.",
         photo: image100,
         description: "The Promenade, Pondicherry, India",
         square: squareImage100
-    },
-    {
-        title: "Hmm...",
-        photo: image110,
-        description: "Sigri Global Grill Kolkata, India",
-        square: squareImage110
-    },
-    {
-        title: "Architecture should speak of it’s time and place, but yearn for timelessness.",
-        photo: image120,
-        description: "Rani Rupmati Mahal, Mandu, India",
-        square: squareImage120
-    },
-    {
-        title: "गिलहरी",
-        photo: image130,
-        description: "Jahaz Mahal, Mandava(Mandu), India",
-        square: squareImage130
-    },
-    {
-        title: "Every Flower Blooms on its own time",
-        photo: image140,
-        description: "Bagh, Madhya Pradesh, India",
-        square: squareImage140
     },
     {
         title: "Of all paths you take in life, make sure few of them are dirt",
@@ -155,13 +161,7 @@ export const images = [
         photo: image190,
         description: "Shravanabelagola, India",
         square: squareImage190
-    },
-    {
-        title: "Think Peace",
-        photo: image200,
-        description: "Egypt",
-        square: squareImage200
-    },
+    }
 
 ]
 

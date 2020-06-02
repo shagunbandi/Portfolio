@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://shagunbandi.github.io/Portfolio/",
   "dependencies": {
+    "arrow-keys-react": "^1.0.6",
     "bootstrap": "^4.4.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
