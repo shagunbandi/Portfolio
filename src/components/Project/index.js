@@ -36,9 +36,17 @@ export class Projects extends Component {
         }
 
         var content = []
-        projects.forEach(project => {
+        projects.forEach((project, index) => {
+            let firstObject = true;
+            let lastObject = true;
+            if (index > 0 && project.title === projects[index - 1].title) {
+                firstObject = false;
+            }
+            if (index < projects.length - 1 && project.title === projects[index + 1].title) { 
+                lastObject = false;
+            }
             content.push(
-                <ProjectComponent project={project} colorSkillMap={colorSkillMap} />
+                <ProjectComponent project={project} colorSkillMap={colorSkillMap} firstObject={firstObject} lastObject={lastObject}/>
             )
         });
         return (
