@@ -1,7 +1,7 @@
 {
   "main.css": "/Portfolio/static/css/main.3c5482ae.chunk.css",
-  "main.js": "/Portfolio/static/js/main.f938c80f.chunk.js",
-  "main.js.map": "/Portfolio/static/js/main.f938c80f.chunk.js.map",
+  "main.js": "/Portfolio/static/js/main.9fc7c2eb.chunk.js",
+  "main.js.map": "/Portfolio/static/js/main.9fc7c2eb.chunk.js.map",
   "static/js/1.26f5a64a.chunk.js": "/Portfolio/static/js/1.26f5a64a.chunk.js",
   "static/js/1.26f5a64a.chunk.js.map": "/Portfolio/static/js/1.26f5a64a.chunk.js.map",
   "runtime~main.js": "/Portfolio/static/js/runtime~main.3b961160.js",
@@ -31,6 +31,6 @@
   "static/media/ShagunBandiResume.pdf": "/Portfolio/static/media/ShagunBandiResume.530dc567.pdf",
   "static/css/main.3c5482ae.chunk.css.map": "/Portfolio/static/css/main.3c5482ae.chunk.css.map",
   "index.html": "/Portfolio/index.html",
-  "precache-manifest.5126143f535dadc4f0dbb13531b8623d.js": "/Portfolio/precache-manifest.5126143f535dadc4f0dbb13531b8623d.js",
+  "precache-manifest.6dc5d7aff5985e18c3f536c316fdbcd6.js": "/Portfolio/precache-manifest.6dc5d7aff5985e18c3f536c316fdbcd6.js",
   "service-worker.js": "/Portfolio/service-worker.js"
 }
