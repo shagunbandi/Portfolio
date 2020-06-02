@@ -59,7 +59,7 @@ export class ProjectComponent extends Component {
                         </div>
                     ) : <span/>}
                     <div>
-                        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description" style={{ padding: "0px" }}>
+                        <p class="col-9 d-inline-block text-gray mb-2 pr-4" style={{ padding: "0px" }}>
                             {aim}
                         </p>
                     </div>

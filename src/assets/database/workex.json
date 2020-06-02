@@ -1,7 +1,7 @@
 [
     {
         "title": "Associate Software Development Engineer II",
-        "aim": "The Project aim to create a tool that allows the value streams to design, secure, validate, deploy and test APIs on bank approved API Management platforms",
+        "aim": "The aim of the project is to create a tool that allows the value streams to design, secure, validate, deploy and test APIs on bank approved API Management platforms",
         "technologies": [
             "NodeJS",
             "Azure",
@@ -10,6 +10,7 @@
             "Git"
         ],
         "org_link": "https://avatars3.githubusercontent.com/u/32199236?s=200&v=4",
+        "org_name": "Publicis Sapient",
         "date": "Feb 2020 - Present",
         "project_title": "Flash"
     },
@@ -27,6 +28,7 @@
             "SpringBoot"
         ],
         "org_link": "https://avatars3.githubusercontent.com/u/32199236?s=200&v=4",
+        "org_name": "Publicis Sapient",
         "date": "Oct 2020 - Feb 2020",
         "project_title": "Payments as a Platform"
     },
@@ -42,12 +44,13 @@
             "ReactJS"
         ],
         "org_link": "https://avatars3.githubusercontent.com/u/32199236?s=200&v=4",
+        "org_name": "Publicis Sapient",
         "date": "Jul 2020 - Oct 2020",
         "project_title": "Training"
     },
     {
         "title": "Software Development Intern",
-        "aim": "Applications to log in the user and provide with previous year question papers and NCERT solutions according to his search history.",
+        "aim": "The aim of the project is to develop an applications that provides with previous year question papers and NCERT solutions according to his search  history of a logged in user.",
         "technologies": [
             "Python",
             "Django",
@@ -56,6 +59,7 @@
             "Android - Java"
         ],
         "org_link": "https://avatars2.githubusercontent.com/u/10166224?s=200&v=4",
+        "org_name": "Toppr",
         "date": "May 2018 - Jul 2018"
     },
     {
@@ -68,6 +72,7 @@
             "Pandas"
         ],
         "org_link": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjA1IiBoZWlnaHQ9IjIwNSIgdmlld0JveD0iMCAwIDIwNSAyMDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjAuOTY3Mzc3IiB5PSIxMDIuNSIgd2lkdGg9IjE0My41ODkiIGhlaWdodD0iMTQzLjU4OSIgcng9IjIwIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgMC45NjczNzcgMTAyLjUpIiBmaWxsPSIjNDIzQzhDIi8+CjxwYXRoIGQ9Ik0xMTMuMzU1IDQxLjA3NjNDMTA3LjQ5NyAzNS4yMTg1IDk3Ljk5OTMgMzUuMjE4NSA5Mi4xNDE0IDQxLjA3NjNMNDAuNzc1NiA5Mi40NDIyQzM0LjkwMDYgOTguMzE3MiAzNC45MjAzIDEwNy44NDkgNDAuODE5NiAxMTMuNjk5TDkxLjU0OTggMTY0LjAxMUM5Ny40MTQ3IDE2OS44MjggMTA2Ljg3OCAxNjkuODA4IDExMi43MTkgMTYzLjk2OEwxMTguNTEgMTU4LjE3N0MxMjAuNDYyIDE1Ni4yMjQgMTIwLjQ2MiAxNTMuMDU4IDExOC41MSAxNTEuMTA2TDEwMS41MTEgMTM0LjEwN0M5Ny42MDU4IDEzMC4yMDIgOTcuNjA1OCAxMjMuODcgMTAxLjUxMSAxMTkuOTY1TDExNS4zNDIgMTA2LjEzNEMxMTcuMjk1IDEwNC4xODEgMTE3LjI5NSAxMDEuMDE1IDExNS4zNDIgOTkuMDYyNUwxMDUuNDk4IDg5LjIxNzhDMTAzLjU0NSA4Ny4yNjUxIDEwMC4zNzkgODcuMjY1MSA5OC40MjY1IDg5LjIxNzhMODQuMTI1NiAxMDMuNTE5QzgyLjE3MyAxMDUuNDcxIDc5LjAwNzIgMTA1LjQ3MSA3Ny4wNTQ1IDEwMy41MTlMNzYuODAwMSAxMDMuMjY0Qzc0Ljg0NzUgMTAxLjMxMiA3NC44NDc1IDk4LjE0NTcgNzYuODAwMSA5Ni4xOTMxTDExOS4xIDUzLjg5M0MxMjEuMDUzIDUxLjk0MDQgMTIxLjA1MyA0OC43NzQ2IDExOS4xIDQ2LjgyMkwxMTMuMzU1IDQxLjA3NjNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTEyLjQzNSA3NS4yMDk2TDEyNi40MjYgNjEuMjE4NUMxMjguMzc4IDU5LjI2NTkgMTMxLjU0NCA1OS4yNjU5IDEzMy40OTcgNjEuMjE4NUwxNjQuMjY4IDkxLjk5MDFDMTcwLjEyNiA5Ny44NDggMTcwLjEyNiAxMDcuMzQ1IDE2NC4yNjggMTEzLjIwM0wxMzMuMDcxIDE0NC40MDFDMTMxLjExOCAxNDYuMzUzIDEyNy45NTIgMTQ2LjM1MyAxMjYgMTQ0LjQwMUwxMTIuMDgyIDEzMC40ODNDMTEwLjEyOSAxMjguNTMgMTEwLjEyOSAxMjUuMzY0IDExMi4wODIgMTIzLjQxMkwxMjkuMjg4IDEwNi4yMDVDMTMxLjI0MSAxMDQuMjUzIDEzMS4yNDEgMTAxLjA4NyAxMjkuMjg4IDk5LjEzNDFMMTEyLjQzNSA4Mi4yODA3QzExMC40ODIgODAuMzI4IDExMC40ODIgNzcuMTYyMiAxMTIuNDM1IDc1LjIwOTZaIiBmaWxsPSIjMjRDQTdBIi8+Cjwvc3ZnPgo=",
+        "org_name": "Finbox",
         "date": "May 2017 - Jul 2017"
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
-        "title": "Researcher - App development for real-time irrigation scheduling",
-        "aim": "Provide the farmer with a basic application notifying him about the irrigation requirements of the crop.",
+        "title": "App development for real-time irrigation scheduling",
+        "aim": "Provide the farmer with a basic application notifying him about the irrigation requirements of the crop on the basis of natural environment around him like the weather, sun time, etc",
         "technologies": [
             "Python",
             "Django",
@@ -10,11 +10,12 @@
             "Android"
         ],
         "org_link": "https://upload.wikimedia.org/wikipedia/en/1/1c/IIT_Kharagpur_Logo.svg",
+        "org_name": "IIT Kharagpur",
         "date": "Aug 2018 - Apr 2019"
     },
     {
         "title": "Application Developer",
-        "aim": "Online catalogue, with easy inventory management features, and notification using whatsapp",
+        "aim": "Aim was to develop a modular web application for Jyoti Cards. Admin can simply add delete all the UI components of the website from the admin panel. It also had features like real time inventory management and updates via whatsapp.",
         "technologies": [
             "Django",
             "Server Setup",
@@ -24,8 +25,20 @@
         "date": "Jul 2019 - Aug 2019"
     },
     {
+        "title": "RaspHomeKit",
+        "aim": "Home automation with Raspberry Pi. Features like RGB Led Strips blinks according to the music being played on the system, scheduled Irrigation for the balcony garden, etc",
+        "technologies": [
+            "RPi",
+            "GPIOs",
+            "Matplotlib",
+            "Python"
+        ],
+        "date": "March, 2019",
+        "gitUrl": "https://github.com/shagunbandi/RaspHomeKit"
+    },
+    {
         "title": "Social Network",
-        "aim": "Develop a fully functional social networking website",
+        "aim": "A fully functional blogging website. It has features including posting, comment threads, add/remove friends.",
         "technologies": [
             "Django",
             "Django Rest Framework"
@@ -35,7 +48,7 @@
     },
     {
         "title": "Text Editor",
-        "aim": "Develop a GUI Text-Editor with functionalities like spell-checker, autocomplete, MarkovText, WordPath.",
+        "aim": "A GUI Text-Editor with functionalities like spell-checker, autocomplete, MarkovText, WordPath.",
         "technologies": [
             "java"
         ],
@@ -58,7 +71,7 @@
     },
     {
         "title": "Photo Album Here",
-        "aim": "A Phots Web Application Layer for your local directory containing your precious photos. Still Working on it...",
+        "aim": "A Photos Web Application Layer for your local directory containing your precious photos. Still Working on it...",
         "technologies": [
             "Django",
             "ReactJS",
@@ -66,5 +79,15 @@
         ],
         "date": "Apr 2020 - Present",
         "gitUrl": "https://github.com/shagunbandi/PhotoAlbumHere"
+    },
+    {
+        "title": "Facebook News",
+        "aim": "An iOS Mobile Application which collects feeds from facebook pages and shows you in a beautiful format even when you have deactivated your FB account. You can Save a post you like. ",
+        "technologies": [
+            "Swift",
+            "Graph API"
+        ],
+        "date": "August, 2017",
+        "gitUrl": "https://github.com/shagunbandi/FaceBook-News"
     }
 ]

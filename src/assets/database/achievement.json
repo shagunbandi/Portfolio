@@ -31,11 +31,22 @@
             ]
         }
     ],
+    "June 2020": [
+        {
+            "title": "Google Cloud Certified - Associate Cloud Engineer",
+            "main_date": "2 Jun",
+            "subtitles": [
+                "Set up a cloud solution environment",
+                "Plan, configure, Deploy and implement a cloud solution",
+                "Ensure successful operation of a cloud solution",
+                "Configure access and security"
+            ]
+        }
+    ],
     "September 2019": [
         {
             "title": "Sapient Awards",
             "main_date": "15 Sep",
-            "link": "#",
             "subtitles": [
                 "Sapient - Rookie of the Batch",
                 "Rewards and Recognitions - Engaging with Openness"
