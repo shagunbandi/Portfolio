@@ -35,7 +35,6 @@ export class ProjectComponent extends Component {
         const FL = "col-12 d-flex width-full border-bottom py-4";
 
 
-        console.log(firstObject, lastObject, title);
         return (
             <li class={
                 firstObject && lastObject ? FL

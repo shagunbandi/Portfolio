@@ -2,6 +2,7 @@ import overview from './Files/Overview';
 import work from './Files/Work';
 import education from './Files/Education';
 import deployDjango from './Files/Tutorials/djangoApacheMySQL.js'
+// Only Sigle Nesting is Allowed
 
 export const fileDetails = [
     {
@@ -24,6 +25,7 @@ export const fileDetails = [
         title: "Tutorials",
         files: [
             {
+                type: "file",
                 title: "Deploy-Django-Apache2-MySQL-Ubuntu.md",
                 content: deployDjango
             }

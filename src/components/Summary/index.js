@@ -18,19 +18,33 @@ export class Summary extends Component {
     }
 
     selectFile = file => {
-        fileDetails.forEach((fileDict, index) => {
-            if (fileDict.title === file) { 
-                this.setState({ content: fileDetails[index]})
+        this.state.filenames.forEach((fileDict, index) => {
+            if (fileDict.title === file.title) {
+                if (fileDict.type === 'file') {
+                    this.setState({ content: this.state.filenames[index] })
+                } else if (fileDict.type === 'folder') {
+                    const fileList = [{
+                        "type": "back",
+                        "title": ".."
+                    }].concat(fileDict['files']);
+
+                    this.setState({ filenames: fileList })
+                } else if (fileDict.type === 'back') {
+                    this.setState({ filenames: fileDetails });
+                }
             }
         });
     }
 
-    render() {
-
-        var filenames = []
-        fileDetails.forEach(file => {
-            filenames.push(file.title);
+    componentDidMount = () => {
+        fileDetails.sort((a, b) => {
+            if (a.type  < b.type) return 1;
+            return -1;
         });
+        this.setState({ filenames: fileDetails})
+    }
+
+    render() {
 
 
         return (
@@ -40,7 +54,7 @@ export class Summary extends Component {
                     <ColorTop />
                     <ColorTab />
                     <ButtonTab />
-                    <DirectoryContainer selectFile={this.selectFile} filenames={filenames} />
+                    <DirectoryContainer selectFile={this.selectFile} files={this.state.filenames}/>
                     <Readme title={this.state.content.title} content={this.state.content.content}/>  
             
                 </div>

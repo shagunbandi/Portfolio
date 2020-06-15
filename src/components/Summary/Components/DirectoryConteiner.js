@@ -7,12 +7,18 @@ import { EachRow } from './EachRow';
 
 export class DirectoryContainer extends Component {
 
+    // selectFile = file => {
+
+    // }
+
+
+
     render() {
 
         var content = []
-        this.props.filenames.forEach(filename => {
+        this.props.files.forEach(file => {
             content.push(
-                <EachRow title={filename} selectFile={this.props.selectFile} />
+                <EachRow file={file} selectFile={this.props.selectFile} />
             )
         });
 
