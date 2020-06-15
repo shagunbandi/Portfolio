@@ -14,7 +14,6 @@ export class Photography extends Component {
     }
 
     showFullUI = () => {
-        console.log("Showing Full UI")
         this.setState({ fullUI: true });
     }
 
