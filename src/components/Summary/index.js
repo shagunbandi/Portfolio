@@ -12,7 +12,7 @@ export class Summary extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: fileDetails[1],
+            content: fileDetails[0],
             filenames:[]
         };
     }
@@ -41,7 +41,15 @@ export class Summary extends Component {
             if (a.type  < b.type) return 1;
             return -1;
         });
-        this.setState({ filenames: fileDetails})
+        var pos = 0
+        for (var i = 0; i < fileDetails.length; i++){
+            if (fileDetails[i].type === 'file') {
+                pos = i;
+                break;
+            }
+        }
+        console.log(pos);
+        this.setState({ filenames: fileDetails, content: fileDetails[pos]})
     }
 
     render() {

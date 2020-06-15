@@ -26,6 +26,9 @@ export class EachRow extends Component {
                         onClick={() => this.props.selectFile(file)}>{file.title}</span>
                     </span>
                 </td>
+                <td class="age">
+                    <span class="css-truncate css-truncate-target">{file.date}</span>
+                </td>
             </tr>
 
         );

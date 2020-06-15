@@ -27,6 +27,7 @@ export const fileDetails = [
             {
                 type: "file",
                 title: "Deploy-Django-Apache2-MySQL-Ubuntu.md",
+                date: "16th June",
                 content: deployDjango
             }
         ]
