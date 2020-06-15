@@ -11,7 +11,7 @@ export const markdown = `
 
 ### Overview
 
----
+<br/>
 
 We'll be using Google Cloud Platform to host our server. Google Cloud has various inbuilt options to host Django Applications like the App Engine, for SQL it has Cloud SQL, etc. But for this tutorial we'll focus on using Virtual Machine to deploy the application. We'll take advantage of GCP's free tier VM, the f1-micro in US Zones. 
 

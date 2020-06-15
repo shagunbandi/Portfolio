@@ -1,7 +1,9 @@
 import overview from './Files/Overview';
 import work from './Files/Work';
 import education from './Files/Education';
-import deployDjango from './Files/Tutorials/djangoApacheMySQL.js'
+import deployDjango from './Files/Tutorials/djangoApacheMySQL'
+import MigrateSql from './Files/Tutorials/MigrateSql'
+import CloudDNSGoDaddy from './Files/Tutorials/CloudDNSGoDaddy'
 // Only Sigle Nesting is Allowed
 
 export const fileDetails = [
@@ -29,6 +31,18 @@ export const fileDetails = [
                 title: "Deploy-Django-Apache2-MySQL-Ubuntu.md",
                 date: "16th June",
                 content: deployDjango
+            },
+            {
+                type: "file",
+                title: "Migrate-SQL-Between-2-Servers.md",
+                date: "16th June",
+                content: MigrateSql
+            },
+            {
+                type: "file",
+                title: "Google-Cloud-DNS-and-GoDaddy.md",
+                date: "16th June",
+                content: CloudDNSGoDaddy
             }
         ]
         
