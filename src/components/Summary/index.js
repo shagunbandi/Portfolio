@@ -12,7 +12,7 @@ export class Summary extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: fileDetails[0],
+            content: fileDetails[1],
             filenames:[]
         };
     }

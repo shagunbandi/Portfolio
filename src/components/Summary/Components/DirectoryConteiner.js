@@ -32,7 +32,7 @@ export class DirectoryContainer extends Component {
 
                         </div>
                         <div class="d-flex flex-self-start flex-items-baseline">
-                            <span>Latest commit :D 20th May, 2020</span>
+                            {/* <span>Write something Here right text</span> */}
                         </div>
                         
                     </div>

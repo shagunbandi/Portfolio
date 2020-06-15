@@ -20,5 +20,6 @@ export class Markdown extends Component {
         );
     }
 }
+
 export default connect()(Markdown);
 

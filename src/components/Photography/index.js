@@ -4,7 +4,6 @@ import { ImageBox } from './ImageBox';
 import { ImageFullScreen } from './ImageFullScreen';
 
 import photos from '../../assets/images/images'
-import { Route } from 'react-router-dom';
 export class Photography extends Component {
 
     constructor(props) {

@@ -3,18 +3,13 @@
 		"Java",
 		"Python",
 		"JavaScript",
-		"C",
-		"C++",
-		"Swift",
-		"Cucumber"
+		"Swift"
 	],
 	"Tools and Framework": [
 		"SpringBoot",
 		"ReactJS",
 		"NodeJS",
 		"Django",
-		"Firebase",
-		"Fabric",
 		"Auth0",
 		"Cucumber"
 	],
@@ -33,7 +28,6 @@
 		"Istio",
 		"GCP",
 		"Azure",
-		"Azure DevOps",
 		"API Management"
 	],
 	"Web Designing": [
