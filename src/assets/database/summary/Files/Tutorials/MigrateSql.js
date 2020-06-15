@@ -20,7 +20,7 @@ In order to migrate the database, there are two steps:
 <br/>
 
 Before transferring the database file to the new VPS, we first need to back it up on the original virtual server by using the mysqldump command.<br/>
-<code>mysqldump -u root -p --opt [database name] > [database name].sql</code>
+<code>mysqldump -u root -p --opt database-name > database-name.sql</code>
 
 After the dump is performed, you are ready to transfer the database.
 
@@ -33,7 +33,7 @@ SCP helps you copy the database. If you used the previous command, you exported 
 
 The SCP command has the following syntax:
 
-<code>scp [database name].sql [username]@[servername]:path/to/database/</code>
+<code>scp database-name.sql username@servername:path/to/database/</code>
 
 A sample transfer might look like this:
 
@@ -60,7 +60,7 @@ With that, your transfer via SCP will be complete.
 You might want to use cloud providers specific tools for that. It makes the process very simple.
 
 For GCP you could use <code>gcloud SDK</code> to directly connect to your VM and copy files.<br/>
-<code>gcloud compute copy-files [database name].sql [username]@[servername]:path/to/database/</code>
+<code>gcloud compute copy-files database-name.sql username@servername:path/to/database/</code>
 
 Make sure you have authenticated yourself. If not run the command <code>gcloud init</code> and follow the steps.
 
