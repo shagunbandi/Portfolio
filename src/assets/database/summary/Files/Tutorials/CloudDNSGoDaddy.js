@@ -26,17 +26,17 @@ Then create a zone with valid parameters. We should have two records once the zo
 
 Then add a record set 
 
-    - for DNS name leave is <code>blank</code>
-    - Resource Record Type <code>A</code>
-    - for iPv4 address fill in the <code>instance-ip</code>
+- for DNS name leave is <code>blank</code>
+- Resource Record Type <code>A</code>
+- for iPv4 address fill in the <code>instance-ip</code>
 
 <br/>
 
 Add another record set
 
-    - for DNS name fill in the value <code>www</code>
-    - Resource Record Type <code>CNAME</code>
-    - for Canonical name fill in the <code>my-webite.com</code>
+- for DNS name fill in the value <code>www</code>
+- Resource Record Type <code>CNAME</code>
+- for Canonical name fill in the <code>my-webite.com</code>
 
 ---
 

@@ -57,7 +57,7 @@ Create the instance -> ssh
 
 Run the following commands to update the packages
 
-<code>sudo apt update && sudo apt upgrade</code>
+<code>$ sudo apt update && sudo apt upgrade</code>
 
 ---
 
@@ -108,10 +108,10 @@ Pip is a package installer used to install python packages. Django itself is a p
 Virtualenv is used to manage python dependencies for different projects, seperating the requirements into different environments. 
 
 <code>$ sudo apt install python3-pip</code><br/>
-<code>$ pip3 install virtualenv</code><br/>
+<code>$ sudo apt install virtualenv</code><br/>
 <code>$ cd ~/myproj/</code><br/>
 <code>$ virtualenv venv -p python3</code><br/>
-<code>$ source venv/bin/active</code><br/>
+<code>$ source venv/bin/activate</code><br/>
 
 ---
 
@@ -128,11 +128,15 @@ Pull your django project from github, or create a new one
 
 <code>(venv) $ cd django</code><br/>
 <code>(venv) $ git clone your-github-url/project</code><br/>
+<code>(venv) $ cd project</code><br/>
 
 lets say your project name is <code>project</code> and it is located at <code>/home/shagunbandi/myproj/django/project</code>
 
 Install requirements for your project, if any<br/>
-<code>git install -r requirements.txt</code>
+<code>pip install -r requirements.txt</code>
+
+You might want to verify you are using the correct pip, the one from the virtual environment.<br/>
+<code>which pip</code>
 
 <br/>
 
@@ -155,7 +159,7 @@ Add your IP address (or "*") to Allowed Hosts as a string value
 Run the project on development server<br/>
 <code>(venv) $ python manage.py runserver 0.0.0.0:8800</code>
 
-Goto your browser and check if the server runs. It might not run if all the requirements are not satisfied like the mysql. Change the db to sqlite for now, if that is the case.<br/>
+Goto your browser and check if the server runs. It might not run if all the requirements are not satisfied like the mysql. Change the db to sqlite for now.<br/>
 <code>instance-ip-address:8800</code>
 
 ---
@@ -215,7 +219,10 @@ In the Editor window add the following
 <br/>
 Save and exit from the nano editor. Restart the mysql client
 
+<code>(venv) $ sudo su</code><br/>
 <code>(venv) $ systemctl restart mysql</code><br/>
+<code>(venv) $ exit</code><br/>
+
 
 ---
 
@@ -270,7 +277,7 @@ In the browser you should see Apache2 Default Screen.
 
 Edit the 000-default.conf file to add our configurations.<br/>
 <code>(venv) $ cd /etc/apache2/sites-available</code><br/>
-<code>(venv) $ nano 000-default.conf<,code><br/>
+<code>(venv) $ nano 000-default.conf</code><br/>
 <br/>
 
     <VirtualHost *:80>
