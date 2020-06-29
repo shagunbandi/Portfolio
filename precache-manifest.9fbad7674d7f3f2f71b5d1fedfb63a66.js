@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/150.83e2a38f.jpg"
   },
   {
-    "revision": "74b847dca144f0011a35",
+    "revision": "9b657b507e77636cface",
     "url": "/Portfolio/static/css/main.3c5482ae.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/profileImage.e4da5069.jpg"
   },
   {
-    "revision": "530dc5670d297c32ae0de885b5991f22",
-    "url": "/Portfolio/static/media/ShagunBandiResume.530dc567.pdf"
+    "revision": "ef2e41c8286cec4fb51785841ac9e3b9",
+    "url": "/Portfolio/static/media/ShagunBandiResume.ef2e41c8.pdf"
   },
   {
     "revision": "13c1d889583e8f41d2ce526e2078de45",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/140.f21c47da.jpg"
   },
   {
-    "revision": "74b847dca144f0011a35",
-    "url": "/Portfolio/static/js/main.74b847dc.chunk.js"
+    "revision": "9b657b507e77636cface",
+    "url": "/Portfolio/static/js/main.9b657b50.chunk.js"
   },
   {
     "revision": "9e3ff353846e6208cd4d1c41a9664a12",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/200.01dafbc7.jpg"
   },
   {
-    "revision": "cd120ddbfacaad6b37a06b5d3e49462b",
+    "revision": "e29c857634bc5e56e53cc7f2edb38208",
     "url": "/Portfolio/index.html"
   }
 ];
