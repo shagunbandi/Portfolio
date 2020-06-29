@@ -29,19 +29,19 @@ export const fileDetails = [
             {
                 type: "file",
                 title: "Deploy-Django-Apache2-MySQL-Ubuntu.md",
-                date: "16th June",
+                date: "14th June",
                 content: deployDjango
             },
             {
                 type: "file",
                 title: "Migrate-SQL-Between-2-Servers.md",
-                date: "16th June",
+                date: "14th June",
                 content: MigrateSql
             },
             {
                 type: "file",
                 title: "Google-Cloud-DNS-and-GoDaddy.md",
-                date: "16th June",
+                date: "15th June",
                 content: CloudDNSGoDaddy
             }
         ]
