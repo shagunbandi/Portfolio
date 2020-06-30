@@ -22,7 +22,8 @@
             "Twillio"
         ],
         "org_link": "https://storage.googleapis.com/jyoticards-static/CardCentre/static/assets/images/agency/jyoti4.png",
-        "date": "Jul 2019 - Aug 2019"
+        "date": "Jul 2019 - Aug 2019",
+        "liveAt": "https://jyoticards.com"
     },
     {
         "title": "RaspHomeKit",
@@ -47,6 +48,18 @@
         "gitUrl": "https://github.com/shagunbandi/Social-Network"
     },
     {
+        "title": "Albumify",
+        "aim": "A Photos Web Application Layer for your local directory containing your photos. Create albums, view by directory or images at once. The frontend is hosted online and requires you to run the django server on your local.",
+        "technologies": [
+            "Django",
+            "ReactJS",
+            "MySQL"
+        ],
+        "date": "Apr 2020 - May 2020",
+        "gitUrl": "https://github.com/shagunbandi/PhotoAlbumHere",
+        "liveAt": "https://shagunbandi.github.io/albumify-frontend/"
+    },
+    {
         "title": "Text Editor",
         "aim": "A GUI Text-Editor with functionalities like spell-checker, autocomplete, MarkovText, WordPath.",
         "technologies": [
@@ -68,17 +81,6 @@
         "date": "May 2020",
         "gitUrl": "https://github.com/shagunbandi/Dog-Vision",
         "org_link": "https://avatars2.githubusercontent.com/u/35373879?s=200&v=4"
-    },
-    {
-        "title": "Photo Album Here",
-        "aim": "A Photos Web Application Layer for your local directory containing your precious photos. Still Working on it...",
-        "technologies": [
-            "Django",
-            "ReactJS",
-            "MySQL"
-        ],
-        "date": "Apr 2020 - Present",
-        "gitUrl": "https://github.com/shagunbandi/PhotoAlbumHere"
     },
     {
         "title": "Facebook News",

@@ -6,7 +6,7 @@ export class ProjectComponent extends Component {
 
     render() {
 
-        const { title, aim, technologies, org_link, date, link, gitUrl, project_title } = this.props.project;
+        const { title, aim, technologies, org_link, liveAt, date, link, gitUrl, project_title } = this.props.project;
         const { colorSkillMap, firstObject, lastObject } = this.props;
 
         var techs = [];
@@ -76,17 +76,32 @@ export class ProjectComponent extends Component {
                         <div class="text-right">
                             {org_link !== undefined && org_link !== "" && org_link !== "#" && org_link !== null ? (
                                 <span><img src={org_link} alt={title} style={{ width: "80px" }} />
-                                    < br />
+                                    <br />
                                     <br />
                                 </span>
+                                
                             ) : (<span />)
                             }
 
+                            {liveAt !== undefined && liveAt !== "" && liveAt !== "#" && liveAt !== null ? (
+                                <span>
+                                    <a class="btn btn-sm" href={liveAt} target="_blank" rel="noopener noreferrer">
+                                        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+                                        </svg>
+                                        Live
+                                    </a>
+                                    <br />
+                                    <br />
+                                </span>
+                            ) : (<span />)}
+
                             {gitUrl !== undefined && gitUrl !== "" && gitUrl !== "#" && gitUrl !== null ? (
                                 <a class="btn btn-sm" href={gitUrl} target="_blank" rel="noopener noreferrer">
-                                    <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+                                    {/* <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
-                                    </svg>Repos
+                                    </svg> */}
+                                    Repos
                                 </a>
                             ) : (<span />)}
                         </div>
