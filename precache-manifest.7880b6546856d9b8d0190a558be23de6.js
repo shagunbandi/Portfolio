@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "83e2a38f2fd718545172bac72a597803",
-    "url": "/Portfolio/static/media/150.83e2a38f.jpg"
+    "revision": "b06dc74bdcc842a912b6",
+    "url": "/Portfolio/static/css/main.4fcc11ef.chunk.css"
   },
   {
-    "revision": "d85b674dcf0ce565d01c",
-    "url": "/Portfolio/static/css/main.3c5482ae.chunk.css"
+    "revision": "b06dc74bdcc842a912b6",
+    "url": "/Portfolio/static/js/main.b06dc74b.chunk.js"
   },
   {
-    "revision": "b1f720dc10643973ddc8",
-    "url": "/Portfolio/static/js/1.b1f720dc.chunk.js"
+    "revision": "509d4e6d18c7cc086999",
+    "url": "/Portfolio/static/js/1.509d4e6d.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/profileImage.e4da5069.jpg"
   },
   {
-    "revision": "ef2e41c8286cec4fb51785841ac9e3b9",
-    "url": "/Portfolio/static/media/ShagunBandiResume.ef2e41c8.pdf"
+    "revision": "f7334a77db9a20e3149477ad0fc695d9",
+    "url": "/Portfolio/static/media/ShagunBandiResume.f7334a77.pdf"
   },
   {
     "revision": "13c1d889583e8f41d2ce526e2078de45",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/140.f21c47da.jpg"
   },
   {
-    "revision": "d85b674dcf0ce565d01c",
-    "url": "/Portfolio/static/js/main.d85b674d.chunk.js"
+    "revision": "83e2a38f2fd718545172bac72a597803",
+    "url": "/Portfolio/static/media/150.83e2a38f.jpg"
   },
   {
     "revision": "9e3ff353846e6208cd4d1c41a9664a12",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/200.01dafbc7.jpg"
   },
   {
-    "revision": "1e5c1e758fc2502633c5e210488fd0fa",
+    "revision": "463c9d6095e7b691e22a40585e5466be",
     "url": "/Portfolio/index.html"
   }
 ];
