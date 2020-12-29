@@ -1,5 +1,21 @@
 [
     {
+        "title": "EvolvFit",
+        "aim": "Create a web/mobile application for EvolvFit, a forum for fitness enthusiasts",
+        "technologies": [
+            "Springboot",
+            "ReactJS",
+            "MySQL",
+            "APIs",
+            "OAuth2.0",
+            "GCP"
+        ],
+        "org_link": "https://evolvfit.net/favicon.ico",
+        "org_name": "EvolvFit",
+        "date": "Aug 2020 - Present",
+        "liveAt": "https://evolvfit.net/"
+    },
+    {
         "title": "App development for real-time irrigation scheduling",
         "aim": "Provide the farmer with a basic application notifying him about the irrigation requirements of the crop on the basis of natural environment around him like the weather, sun time, etc",
         "technologies": [
@@ -14,7 +30,7 @@
         "date": "Aug 2018 - Apr 2019"
     },
     {
-        "title": "Application Developer",
+        "title": "Jyoti Cards",
         "aim": "Aim was to develop a modular web application for Jyoti Cards. Admin can simply add delete all the UI components of the website from the admin panel. It also had features like real time inventory management and updates via whatsapp.",
         "technologies": [
             "Django",

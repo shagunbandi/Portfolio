@@ -3,13 +3,15 @@
 		"Java",
 		"Python",
 		"JavaScript",
+		"GoLang",
 		"Swift"
 	],
 	"Tools and Framework": [
 		"SpringBoot",
 		"ReactJS",
 		"NodeJS",
-		"Django"
+		"Django",
+		"Kafka"
 	],
 	"Data Analysis": [
 		"Pandas",

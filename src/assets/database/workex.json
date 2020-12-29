@@ -1,6 +1,22 @@
 [
     {
-        "title": "Associate Software Development Engineer II",
+        "title": "Software Development Engineer",
+        "aim": "The aim of the project is to create an automised version of already existing system, that determmines if the user should be granted with the loan or not",
+        "technologies": [
+            "Springboot",
+            "Kubernetes",
+            "Docker",
+            "Java",
+            "Kafka",
+            "SOAP/REST APIs"
+        ],
+        "org_link": "https://avatars3.githubusercontent.com/u/32199236?s=200&v=4",
+        "org_name": "Publicis Sapient",
+        "date": "Jun 2020 - Present",
+        "project_title": "Retail Banking"
+    },
+    {
+        "title": "Software Development Engineer",
         "aim": "The aim of the project is to create a tool that allows the value streams to design, secure, validate, deploy and test APIs on bank approved API Management platforms",
         "technologies": [
             "NodeJS",
@@ -11,11 +27,11 @@
         ],
         "org_link": "https://avatars3.githubusercontent.com/u/32199236?s=200&v=4",
         "org_name": "Publicis Sapient",
-        "date": "Feb 2020 - Present",
+        "date": "Feb 2020 - Jun 2020",
         "project_title": "Flash"
     },
     {
-        "title": "Associate Software Development Engineer II",
+        "title": "Software Development Engineer",
         "aim": "The aim of the project is to create Payment as a Platform. To create a unified payment system which can be plugged into any product for a secure payment.",
         "technologies": [
             "GCP",
@@ -33,7 +49,7 @@
         "project_title": "Payments as a Platform"
     },
     {
-        "title": "Associate Software Development Engineer II",
+        "title": "Software Development Engineer",
         "aim": "Learning the Basics of full-stack development and creating a web application named Marcus. Marcus is basically a banking application for Goldman Sachs whose aim is to have a 100% online banking system.",
         "technologies": [
             "AWS",
