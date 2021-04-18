@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "b06dc74bdcc842a912b6",
-    "url": "/Portfolio/static/css/main.4fcc11ef.chunk.css"
+    "revision": "394ee5b5347771790193",
+    "url": "/Portfolio/static/css/main.fa850286.chunk.css"
   },
   {
-    "revision": "b06dc74bdcc842a912b6",
-    "url": "/Portfolio/static/js/main.b06dc74b.chunk.js"
+    "revision": "394ee5b5347771790193",
+    "url": "/Portfolio/static/js/main.394ee5b5.chunk.js"
   },
   {
-    "revision": "509d4e6d18c7cc086999",
-    "url": "/Portfolio/static/js/1.509d4e6d.chunk.js"
+    "revision": "ac0eb4fdbddd6ae7ca34",
+    "url": "/Portfolio/static/js/1.ac0eb4fd.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
@@ -18,10 +18,6 @@ self.__precacheManifest = [
   {
     "revision": "e4da5069728b3704dadb9e4574359d18",
     "url": "/Portfolio/static/media/profileImage.e4da5069.jpg"
-  },
-  {
-    "revision": "f7334a77db9a20e3149477ad0fc695d9",
-    "url": "/Portfolio/static/media/ShagunBandiResume.f7334a77.pdf"
   },
   {
     "revision": "13c1d889583e8f41d2ce526e2078de45",
@@ -168,7 +164,7 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/200.01dafbc7.jpg"
   },
   {
-    "revision": "463c9d6095e7b691e22a40585e5466be",
+    "revision": "03f99d636973b9e2acbb2235eb892e74",
     "url": "/Portfolio/index.html"
   }
 ];
