@@ -11,7 +11,7 @@ export const markdown = `
 
 <br/>
 
-Shagun Bandi lives in Bengaluru and is working as a <strong><em>Software Development Engineer II at Publicis Sapient</em></strong>. He graduated from <strong><em>IIT Kharagpur studying Agricultural and Food Engineering</em></strong>.
+Shagun Bandi lives in Bengaluru and is working as a <strong><em>Associate Software Development Engineer II at Publicis Sapient</em></strong>. He graduated from <strong><em>IIT Kharagpur studying Agricultural and Food Engineering</em></strong>.
 
 He likes to do <strong><em>project of his own</em ></strong >. He has created various tools he could use in his daily life like the Albumify, RaspHomeKit, etc. One of his favorites is the RaspHomeKit, which he uses to have his own disco during house parties and to automate plant water requirements.
 
@@ -21,7 +21,7 @@ He <strong><em>loves to photograph</em ></strong > sceneries and food. He has hi
 
 He currently started working on some ML related projects. Started off with a course and then worked on Dog Breed Idenification project from Kaggle.
 
-`
+`;
 
 export default markdown;
 

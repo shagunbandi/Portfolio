@@ -1,7 +1,7 @@
 [
     {
         "title": "EvolvFit",
-        "aim": "Create a web/mobile application for EvolvFit, a forum for fitness enthusiasts",
+        "aim": "Create a web application for EvolvFit, a forum for fitness enthusiasts. Also created an E-Commerse Store for selling various goods.",
         "technologies": [
             "Springboot",
             "ReactJS",
@@ -10,7 +10,7 @@
             "OAuth2.0",
             "GCP"
         ],
-        "org_link": "https://evolvfit.net/favicon.ico",
+        "org_link": "https://evolvfit.net/favicon.png",
         "org_name": "EvolvFit",
         "date": "Aug 2020 - Present",
         "liveAt": "https://evolvfit.net/"

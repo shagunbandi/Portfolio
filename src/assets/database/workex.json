@@ -5,6 +5,7 @@
         "technologies": [
             "Springboot",
             "Kubernetes",
+            "Batching",
             "Docker",
             "Java",
             "Kafka",
