@@ -6,7 +6,7 @@
   "dependencies": {
     "arrow-keys-react": "^1.0.6",
     "bootstrap": "^4.4.1",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-markdown": "^4.3.1",
