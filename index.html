@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shagun@portfolio: ~</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #0c0c0c;
+            color: #33ff33;
+            padding: 2rem;
+        }
+
+        .floating-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .float-item {
+            position: absolute;
+            bottom: -50px;
+            font-size: 1.5rem;
+            opacity: 0.2;
+            animation: floatUp 15s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+            }
+        }
+
+        .terminal {
+            width: 100%;
+            max-width: 700px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            box-shadow:
+                0 0 0 1px #333,
+                0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .terminal-header {
+            background: #2d2d2d;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terminal-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .terminal-btn.red { background: #ff5f56; }
+        .terminal-btn.yellow { background: #ffbd2e; }
+        .terminal-btn.green { background: #27ca40; }
+
+        .terminal-title {
+            flex: 1;
+            text-align: center;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .terminal-body {
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .prompt {
+            color: #ff79c6;
+        }
+
+        .command {
+            color: #8be9fd;
+        }
+
+        .output {
+            color: #f8f8f2;
+            margin-left: 0;
+        }
+
+        .name {
+            color: #50fa7b;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .description {
+            color: #6272a4;
+            margin: 0.5rem 0 0;
+            padding-left: 1rem;
+            line-height: 1.9;
+        }
+
+        .about {
+            color: #6272a4;
+            margin: 0.5rem 0 0;
+            padding-left: 1rem;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            color: #ffb86c;
+        }
+
+        .traits {
+            color: #bd93f9;
+            margin-top: 0.25rem;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        .line {
+            margin-bottom: 0.5rem;
+        }
+
+        .tree {
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+        }
+
+        .tree-header {
+            color: #50fa7b;
+            margin-bottom: 0.5rem;
+        }
+
+        .tree-item {
+            margin-bottom: 0.75rem;
+        }
+
+        .tree-branch {
+            color: #6272a4;
+        }
+
+        .tree-desc {
+            color: #6272a4;
+            font-size: 0.8rem;
+            margin-left: 2.5rem;
+            margin-top: 0.2rem;
+        }
+
+        .socials {
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+        }
+
+        .socials a {
+            border-bottom: none;
+        }
+
+        .separator {
+            color: #6272a4;
+            margin: 0 0.75rem;
+        }
+
+        
+        a {
+            color: #8be9fd;
+            text-decoration: none;
+            border-bottom: 1px dashed #8be9fd;
+            padding-bottom: 2px;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #ff79c6;
+            border-bottom-color: #ff79c6;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background: #33ff33;
+            margin-left: 4px;
+            animation: blink 1s step-end infinite;
+            vertical-align: text-bottom;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            .terminal {
+                max-height: calc(100vh - 2rem);
+                overflow-y: auto;
+            }
+
+            .terminal-body {
+                padding: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .name {
+                font-size: 1.25rem;
+            }
+
+            .traits {
+                font-size: 0.75rem;
+            }
+
+            .separator {
+                margin: 0 0.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-bg">
+        <span class="float-item" style="left: 3%; animation-delay: 0s;">&lt;/&gt;</span>
+        <span class="float-item" style="left: 10%; animation-delay: 2s;">🐍</span>
+        <span class="float-item" style="left: 17%; animation-delay: 4s;">{ }</span>
+        <span class="float-item" style="left: 24%; animation-delay: 1s;">😎</span>
+        <span class="float-item" style="left: 31%; animation-delay: 6s;">def</span>
+        <span class="float-item" style="left: 38%; animation-delay: 3s;">🚀</span>
+        <span class="float-item" style="left: 45%; animation-delay: 5s;">=&gt;</span>
+        <span class="float-item" style="left: 52%; animation-delay: 7s;">💻</span>
+        <span class="float-item" style="left: 59%; animation-delay: 2.5s;">#!/</span>
+        <span class="float-item" style="left: 66%; animation-delay: 8s;">☕</span>
+        <span class="float-item" style="left: 73%; animation-delay: 1.5s;">[ ]</span>
+        <span class="float-item" style="left: 80%; animation-delay: 4.5s;">🔥</span>
+        <span class="float-item" style="left: 87%; animation-delay: 6.5s;">/*</span>
+        <span class="float-item" style="left: 94%; animation-delay: 0.5s;">⚡</span>
+        <span class="float-item" style="left: 7%; animation-delay: 9s;">🎯</span>
+        <span class="float-item" style="left: 21%; animation-delay: 10s;">::</span>
+        <span class="float-item" style="left: 35%; animation-delay: 11s;">🌊</span>
+        <span class="float-item" style="left: 49%; animation-delay: 8.5s;">&&</span>
+        <span class="float-item" style="left: 63%; animation-delay: 9.5s;">📸</span>
+        <span class="float-item" style="left: 77%; animation-delay: 10.5s;">( )</span>
+        <span class="float-item" style="left: 91%; animation-delay: 7.5s;">🏔️</span>
+    </div>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="terminal-btn red"></span>
+            <span class="terminal-btn yellow"></span>
+            <span class="terminal-btn green"></span>
+            <span class="terminal-title">shagun@portfolio: ~</span>
+        </div>
+        <div class="terminal-body">
+            <div class="line">
+                <span class="prompt">~</span> <span class="command">whoami</span>
+            </div>
+            <div class="line">
+                <span class="name">Shagun Bandi</span>
+            </div>
+            <div class="traits">
+                Technophile | Hodophile | Epicure | Photographer
+            </div>
+
+            <div class="line" style="margin-top: 1.5rem;">
+                <span class="prompt">~</span> <span class="command">cat code_to_live_by.txt</span>
+            </div>
+            <div class="description">
+                Converting coffee to code and ideas to initiatives
+            </div>
+
+            <div class="line" style="margin-top: 1.5rem;">
+                <span class="prompt">~</span> <span class="command">cat about.txt</span>
+            </div>
+            <div class="about">
+                <span class="highlight">Senior Software Engineer</span> at FareHarbor by day, adrenaline junkie by nature. When I'm not shipping code, I'm pushing limits — underwater as a scuba diver, on two wheels cycling long routes, or out hiking trails. Forged at <span class="highlight">IIT Kharagpur</span>. Currently navigating life in <span class="highlight">Amsterdam</span>. Rooted in <span class="highlight">Indore, India</span>.
+            </div>
+
+            <div class="line" style="margin-top: 1.5rem;">
+                <span class="prompt">~</span> <span class="command">tree ~/projects</span>
+            </div>
+            <div class="tree">
+                <div class="tree-header">projects/</div>
+                <div class="tree-item">
+                    <span class="tree-branch">├──</span>
+                    <a href="https://geekynavigator.com" target="_blank">geekynavigator.com</a>
+                    <div class="tree-desc">AI-powered itinerary planner for seamless travel</div>
+                </div>
+                <div class="tree-item">
+                    <span class="tree-branch">├──</span>
+                    <a href="https://nitya.geekynavigator.com" target="_blank">nitya.geekynavigator.com</a>
+                    <div class="tree-desc">Habit tracker & life coach to build better routines</div>
+                </div>
+                <div class="tree-item">
+                    <span class="tree-branch">├──</span>
+                    <a href="https://mortgage.geekynavigator.com" target="_blank">mortgage.geekynavigator.com</a>
+                    <div class="tree-desc">Simple mortgage calculator for the Netherlands</div>
+                </div>
+                <div class="tree-item">
+                    <span class="tree-branch">└──</span>
+                    <a href="https://tales.geekynavigator.com" target="_blank">tales.geekynavigator.com</a>
+                    <div class="tree-desc">Privacy-first album creator, runs entirely local</div>
+                </div>
+            </div>
+
+            <div class="line" style="margin-top: 1.5rem;">
+                <span class="prompt">~</span> <span class="command">cat socials.txt</span>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/shagunbandi/" target="_blank">linkedin</a>
+                <span class="separator">•</span>
+                <a href="https://www.instagram.com/sev.snapshots/" target="_blank">instagram</a>
+                <span class="separator">•</span>
+                <a href="https://github.com/shagunbandi" target="_blank">github</a>
+                <span class="separator">•</span>
+                <a href="mailto:shagunamitbandi@gmail.com">email</a>
+            </div>
+
+            <div class="line" style="margin-top: 1.5rem;">
+                <span class="prompt">~</span> <span class="cursor"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
