@@ -1,18 +1,18 @@
 version: "3.8"
 
 services:
-  portfolio-app:
+  shagunbandi-portfolio-app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: portfolio-app
+    container_name: shagunbandi-portfolio-app
     stop_grace_period: 1s
     restart: always
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(`geekynavigator.com`)"
+      - "traefik.http.routers.portfolio.rule=Host(`shagunbandi.com`)"
       - "traefik.http.routers.portfolio.tls=true"
-      - "traefik.http.routers.ws.tls.certresolver=cloudflare"
+      - "traefik.http.routers.portfolio.tls.certresolver=cloudflare"
       - "traefik.http.services.portfolio.loadbalancer.server.port=80"
       - "traefik.docker.network=geekynavigator_network"
     networks:
