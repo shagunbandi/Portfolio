@@ -315,7 +315,18 @@
         }
 
         .pager-text {
-            color: #f1fa8c;
+            display: inline-block;
+            background: #50fa7b;
+            color: #0c0c0c;
+            font-weight: 700;
+            padding: 1px 8px;
+            letter-spacing: 0.3px;
+            border-radius: 2px;
+        }
+
+        .pager-line:hover .pager-text,
+        .pager-line:focus .pager-text {
+            background: #f1fa8c;
         }
 
         .pager-hint {
@@ -327,11 +338,15 @@
         }
 
         .pager-line.pager-done .pager-text {
+            background: none;
             color: #6272a4;
+            font-weight: 400;
+            padding: 0;
         }
 
         .pager-line.pager-done a {
             color: #8be9fd;
+            text-decoration: underline;
         }
 
         @media (max-width: 600px) {
@@ -574,7 +589,6 @@
     <script>
         (function () {
             var items = Array.prototype.slice.call(document.querySelectorAll('.photo-item'));
-            var batchSize = 3;
             var shown = items.filter(function (item) { return !item.classList.contains('hidden'); }).length;
             var pager = document.getElementById('photoPager');
             var pagerText = document.getElementById('photoPagerText');
@@ -592,11 +606,10 @@
 
             function revealMore() {
                 if (shown >= items.length) return;
-                var next = Math.min(shown + batchSize, items.length);
-                for (var i = shown; i < next; i++) {
+                for (var i = shown; i < items.length; i++) {
                     items[i].classList.remove('hidden');
                 }
-                shown = next;
+                shown = items.length;
                 updatePager();
             }
 
